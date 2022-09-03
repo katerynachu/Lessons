@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+</head>
+<body>
+    <!-- br використаний лише для естетичного вигляду -->
+    <h1>Create an Account</h1>
+    <form action="#" name="create_account" method="get">
+        <label for="field1">Fist Name</label>
+        <input id="field1" required name="fistname" type="text" >
+        <label for="field2">Last Name</label>
+        <input id="field2" required name="lastame" type="text">
+        <br>
+        <label for="field3">E-mail</label>
+        <input id="field3" required name="email" type="email">
+        <p>We'll never share your email with anyone else.</p>
+        <input type="radio" name="gender" id="radio_male" value="Male" checked >
+        <label for="radio_male">Male</label>
+        <input type="radio" name="gender" id="radio_female" value="Female">
+        <label for="radio_female">Female</label>
+        <br>
+        <br>
+        <label for="select_country">Country</label>
+        <br>
+        <select name="country" id="select_country" required>
+            <option value="" selected disabled hidden>Select</option>
+            <option value="item_1">Ukraine</option>
+            <option value="item_2">Poland</option>
+            <option value="item_3">France</option>
+            <option value="item_4">Spain</option>
+        </select>
+        <label for="text_city">City</label>
+        <input type="text" name="city" required id="text_city">
+        <br>
+        <br>
+        <button type="submit">Sign Up</button>
+        <br>
+        <p>By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href="#">Tems of Use</a> and <a href="#">Privacy Policy</a>
+        </p>
+        <hr>
+        <p>Have an account? <a href="#">Log In</a></p>
+    </form>
+    <form action="#" name="profile" method="post">
+        <img src="/Homework_04/img/7. Userpic/📷 Image.png" alt="Photo user">
+        <input type="file" accept="img/*">
+        <button type="button">Delete</button>
+        <p>Up to 1 MB (300x300 px)</p>
+        <br>
+        <label for="profile_name">Name</label>
+        <input type="text" name="name" required id="profile_name">
+        <label for="profile_email">E-mail</label>
+        <input type="email" name="email" required id="profile_email">
+        <br>
+        <br>
+        <label for="profile_country">Country</label>
+        <br>
+        <select name="country" id="profile_country" required>
+            <option value="" selected disabled hidden>Select</option>
+            <option value="item_1">Ukraine</option>
+            <option value="item_2">Poland</option>
+            <option value="item_3">France</option>
+            <option value="item_4">Spain</option>
+        </select>
+        <label for="profile_city">City</label>
+        <input type="text" id="profile_city" required>
+        <br>
+        <br>
+        <label for="zip_code">Zip Code</label>
+        <input type="text" name="zipcode" id="zip_code">
+        <label for="profile_number">Phone Number</label>
+        <input type="tel" name="tel" id="profile_number" required>
+        <br>
+        <br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
