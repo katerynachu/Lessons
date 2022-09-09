@@ -1,0 +1,228 @@
+
+.container{
+    max-width: 970px ;
+    margin: 0 auto;
+    
+}
+.menu{
+    text-align: center;
+    margin: 0 auto;
+    padding: 28px 0;
+}
+li{
+    display:inline-block;
+    text-align: center;
+
+}
+.menu_list a{
+    text-decoration: none;
+    display: block;
+    margin-right: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+}
+a:hover{
+    color: #070707;
+}
+hr{
+    max-width: 970px ;
+    color: #828282;
+}
+h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+.fist_screen{
+    width: 100%;
+}
+.about_me{
+    background-color: #F6F6F6;
+    text-align: center;
+
+}
+.h_about_me{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #070707;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.text_p{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 100px;
+}
+
+.second_p{
+    margin-bottom: 30px;
+}
+
+.skills{
+    text-align: center;
+}
+.h_skills{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #070707;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.text_skills{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #070707;
+    margin-bottom: 50px;
+}
+.product_list{
+    display:inline-block;
+    margin-right: 88px;
+    
+}
+.logo_skills{
+    margin-bottom: 25px;
+    vertical-align: top;
+
+}
+.product_list p{
+    max-width: 90px;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+}
+.stars{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.stars_figma{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.portfolio{
+    background-color: #F6F6F6;
+    text-align: center;
+}
+.h_portfolio{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #070707;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.portfolio_pages img{
+    margin-bottom: 40px;
+}
+.portfolio_pages a{
+    display:inline-block;
+    text-align: center;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #070707;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.contacts{
+    text-align: center;
+   
+}
+.h_contacts{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #070707;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.p_contacts{
+    max-width: 280px;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.button{
+    width: 190px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    background: #070707;
+    border-radius: 22px;
+    padding: 0px 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.icon_list{
+    display:inline-block;
+    
+}
+.icon_list img{
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.footer_text{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.footer_p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+}
+.footer_text-link a {
+    text-decoration: none;
+    color: #828282;
+}
+a:hover{
+    color: #070707;
+}
+.footer_text-link{
+    margin-bottom: 100px;
+}
