@@ -110,6 +110,9 @@ h1{
     margin-right: 88px;
     
 }
+.products div:last-child{
+    margin-right: 0;
+}
 .logo_skills{
     margin-bottom: 25px;
     vertical-align: top;
@@ -210,11 +213,10 @@ h1{
 }
 
 .icon_list img{
-   
     margin-top: 30px;
     margin-bottom: 60px;
 }
-.icon_list img:last-child{
+.icons div:last-child{
     margin-right: 0;
 }
 .footer_text{
