@@ -40,6 +40,10 @@ h1{
     line-height: 19px;
     color: #FF8984;
 }  
+label{
+    display: block;
+    cursor: pointer;
+}
 .all_list{
     background-color: #7A7593;;
     margin-top: 20px;
@@ -61,13 +65,20 @@ h1{
     color: #FFFFFF;
     margin-left: 16px;
     margin-top: 5px;
+   
+}
+.checkbox_text{
+    margin-left: 3px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
 }
 
 .all_list div:hover{
     background: #625E77;
     border: 3px solid #FFFFFF;
 }    
-input:checked + label{
+input:checked +span{
     text-decoration: line-through;
 }
 .all_list div:active,.all_list div:focus{
