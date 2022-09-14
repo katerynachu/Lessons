@@ -46,6 +46,7 @@ margin-right: 20px;
     color: #FF9900;
 }
 .in{
+    background-color: #F2F2F2;;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
     padding: 13px 25px;
@@ -71,9 +72,11 @@ button:hover{
     display: inline-block;
 }
 div .fist_screen-content{
+    height: 100%;
+    width: 50%;
     max-width: 500px;
     margin-right: 56px;
-    padding: 97px 0;
+    vertical-align: middle;
 }
 h1{
     font-weight: 700;
@@ -92,6 +95,7 @@ h1{
     
 }
 .button_fist-screen{
+    font-weight: 700;
     background: #FF9900;
     border-radius: 4px;
     padding: 13px 40px;
@@ -99,5 +103,5 @@ h1{
     border: unset;
 }
 .fist_screen-img{
-float: right;
+    width: 50%;
 }
