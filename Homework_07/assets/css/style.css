@@ -93,7 +93,7 @@ h1{
 
     
 }
-.button_fist-screen{
+.button{
     font-weight: 700;
     background: #FF9900;
     border-radius: 4px;
@@ -101,6 +101,127 @@ h1{
     color: #FFFFFF;
     border: unset;
 }
+.button:hover{
+    color: #2F281E;
+}
 .fist_screen-img{
     width: 50%;
+}
+.features{
+    background-image: url("../img/bg.png");
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    background-size:auto;
+    margin-top: 99px;
+    padding-bottom: 71px;
+    
+}
+.h2{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 539px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2F281E;
+}
+.h2 span{
+    display: block;
+}
+.card{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    column-gap: 45px;
+}
+.item{
+    max-width: 270px;
+    
+}
+
+.item img{
+    max-width: 51px;
+}
+.item h3{
+    margin-top:30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2F281E;
+}
+.item p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    min-height: 52px;
+}
+.button_features{
+    margin-top: 70px;
+    text-align: center;
+}
+hr{
+   color:#BCD0E57F ;
+   opacity: 0.1;
+}
+.footer{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.footer_items li{
+margin-bottom: 15px;
+}
+.footer_items li:last-child{
+    margin-bottom: 0px;
+}
+.footer_items a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+
+}
+.footer_items a:hover{
+    color: #FF9900;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    row-gap: 25px;
+}
+.form h4{
+    margin-bottom: 0;
+    max-width: 280px;
+
+}
+.form input{
+    width: 340px;
+    height: 50px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
+
+}
+.form button{
+    margin-bottom: 0px;
 }
