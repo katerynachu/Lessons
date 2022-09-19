@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+.cities,
+.people ,
+.nature{
+    margin: 120px 0;
+}
+h2{
+    margin-bottom: 80px;
+    font-family: 'Delius Unicase';
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.cities_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,360px);
+    gap: 30px;
+}
+div.item-cities-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Cities/image-1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+div.content{
+    height: 100%;
+    position:relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+.item-cities-2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../img/Cities/image-2.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.item-cities-3{
+    grid-column-end: 3;
+    grid-column-start: 1;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../img/Cities/image-3.png);
+    background-repeat: no-repeat;
+}
+.item-cities-4{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../img/Cities/image-4.png);
+    background-repeat: no-repeat;
+}
+.item-cities-5{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../img/Cities/image-5.png);
+    background-repeat: no-repeat;
+}
+.item-cities-6{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),url(../img/Cities/image-6.png);
+    background-repeat: no-repeat;
+    
+}
+.name{
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.date{
+    color: #E0E0E0;
+}
+
+.nature_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,360px);
+    gap: 30px;
+}
+.item-nature-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.item-nature-2{
+    grid-column-start:2;
+    grid-column-end: 4;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.item-nature-3{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-3.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-nature-4{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-4.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-nature-5{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 3;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-5.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-nature-6{
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/Nature/image-6.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+
+.people_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,360px);
+    gap: 30px;
+}
+
+.item-people-1{
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-2.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-3png.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-4{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-4.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-5.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+
+.item-people-7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-6.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-7.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-8{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-8.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-9{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-9.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+.item-people-10{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 100%;
+    background-image:linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%) ,url(../img/People/image-10png.png);
+    border-radius: 20px;
+    background-repeat: no-repeat; 
+}
+
+.overlay{
+   display: none;
+   position: absolute;
+
+}
+.flex-img{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.flex-img img{
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+}
+.flex-img img:hover{
+    background: #E0E0E0;
+}
+
+.block_hover:hover .overlay{
+    display:contents;
+    position:absolute;
+    
+}
+.block_hover:hover .overlay + .content{
+    height: 77%;
+}
+.block_hover:hover .overlay + .con{
+    height: 80%;
+}
+.bg-1:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-1.png);
+}
+.bg-2:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-2.png);
+}
+.bg-3:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-3.png);
+}
+.bg-4:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-4.png);
+}
+.bg-5:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-5.png);
+}
+.bg-6:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-6.png);
+}
+.ng-1:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-1.png);
+}
+.ng-2:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-2.png);
+}
+.ng-3:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-3.png);
+}
+.ng-4:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-4.png);
+}
+.ng-5:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-5.png);
+}
+.ng-6:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-6.png);
+}
+.pg-1:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-1.png);
+}
+.pg-2:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-2.png);
+}
+.pg-3:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-3png.png);
+}
+.pg-4:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-4.png);
+}
+.pg-5:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-5.png);
+}
+.pg-6:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-7.png);
+}
+.pg-7:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-6.png);
+}
+.pg-8:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-8.png);
+}
+.pg-9:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-9.png);
+}
+.pg-10:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-10png.png);
+}
