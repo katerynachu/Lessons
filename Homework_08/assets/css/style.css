@@ -88,6 +88,24 @@ div.content{
     background-repeat: no-repeat;
     
 }
+.bg-1:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-1.png);
+}
+.bg-2:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-2.png);
+}
+.bg-3:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-3.png);
+}
+.bg-4:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-4.png);
+}
+.bg-5:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-5.png);
+}
+.bg-6:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-6.png);
+}
 .name{
     font-family: 'Roboto';
     font-weight: 500;
@@ -102,6 +120,24 @@ div.content{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,360px);
     gap: 30px;
+}
+.ng-1:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-1.png);
+}
+.ng-2:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-2.png);
+}
+.ng-3:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-3.png);
+}
+.ng-4:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-4.png);
+}
+.ng-5:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-5.png);
+}
+.ng-6:hover:hover{
+    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-6.png);
 }
 .item-nature-1{
     grid-column-start: 1;
@@ -292,42 +328,8 @@ div.content{
 .block_hover:hover .overlay + .con{
     height: 80%;
 }
-.bg-1:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-1.png);
-}
-.bg-2:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-2.png);
-}
-.bg-3:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-3.png);
-}
-.bg-4:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-4.png);
-}
-.bg-5:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-5.png);
-}
-.bg-6:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Cities/image-6.png);
-}
-.ng-1:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-1.png);
-}
-.ng-2:hover:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-2.png);
-}
-.ng-3:hover:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-3.png);
-}
-.ng-4:hover:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-4.png);
-}
-.ng-5:hover:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-5.png);
-}
-.ng-6:hover:hover{
-    background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/Nature/image-6.png);
-}
+
+
 .pg-1:hover{
     background-image:linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),url(../img/People/image-1.png);
 }
