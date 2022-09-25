@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+        color: #000000;
+        font-size: 10px;
+    }
+    :root{
+        --Farro:'Farro', sans-serif;
+        ;
+        --FrancoinsOne:'Francois One', sans-serif;
+        ;
+        --PTsans:'PT Sans', sans-serif;
+        ;
+        --Staatliches:'Staatliches', cursive;;
+        --Tourney:'Tourney', cursive;
+        ;
+    }
+    .header_container{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .header_menu{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top:0;
+
+    
+    }
+    .header_menu_lang{
+        margin-right: 50px;
+        padding: 29px 0;
+        justify-content: flex-start;
+    
+    }
+    .lang{
+        font-family:var(--Tourney);
+        font-size:22px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height:82%;
+        letter-spacing: 0.04em;
+    }
+    .header_menu_nav{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .nav_text{
+        color: #000000;
+        font-family:var(--Staatliches);
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    }
+    .header_menu_logo{
+        margin-left: 600px;
+    }
+
+    .main_container{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .main_content{
+        display: flex;
+        margin-top: 140px;
+        position: relative;
+       }
+
+    .content-img{
+      position:absolute;
+
+    }
+    .content-img_fixed{
+      position:fixed;
+      right: 0;
+    }
+    .content_aside{
+        padding: 10px 10px 0 10px;
+        max-width: 385px;
+        margin-right: 30px;
+    }
+    .aside_block-sticky{
+        position: sticky;
+        top:50px;
+    }
+    .aside-title{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #BDBDBD;
+       }
+     .aside_link{
+        color: #000000;
+        text-decoration: none;
+       }
+     .aside_link:hover{
+        color:  rgb(206, 206, 206);
+       }
+     .aside_link:active{
+        color: #7a7a7a;
+       }
+     .content-list{
+          position: relative;
+            max-width: 785px;
+        }
+    .list-chapter + .list-chapter{
+        margin: 70px 0;
+    }
+    .list-title{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .h2-text{
+        font-family:var(--FrancoinsOne);
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .list-chapter::before{
+        content: '';
+        width: 100px;
+        height: 8px;
+        background: #000000;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .title-description{
+        font-family:var(--Farro);
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .subtitle{
+        font-family:var(--PTsans);
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+       
+    }
+    .underline{
+        text-decoration-line: underline;
+    }
+    .italic{
+        font-style: italic;
+    }
+    .weight700{
+        font-weight: 700;
+    }
+    .mark-grey{
+    background-color: rgb(206, 206, 206);
+    }
+    .subtitle_list-chapter{
+        display: flex;
+        flex-direction:column;
+        gap: 40px;
+    }
+  
+  
+  
+  
+
