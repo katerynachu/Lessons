@@ -19,15 +19,22 @@
         --Tourney:'Tourney', cursive;
         ;
     }
+                 /* header */
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+    }
     .header_container{
         margin: 0 auto;
         max-width: 1200px;
     }
+    
     .header_menu{
         display: flex;
         align-items: center;
-        position: fixed;
-        top:0;
 
     
     }
@@ -90,17 +97,16 @@
         top:50px;
     }
     .aside-title{
+          display: block;
+        color: #000000;
+        text-decoration: none;
         padding-bottom: 10px;
         border-bottom: 1px solid #BDBDBD;
        }
-     .aside_link{
-        color: #000000;
-        text-decoration: none;
-       }
-     .aside_link:hover{
+     .aside-title:hover{
         color:  rgb(206, 206, 206);
        }
-     .aside_link:active{
+     .aside-title:active{
         color: #7a7a7a;
        }
      .content-list{
