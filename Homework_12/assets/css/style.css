@@ -16,7 +16,7 @@
 }
 
                /* header */
-               
+
 .header_container,
 .main_container,
 .footer_container {
@@ -159,6 +159,9 @@
     border: 1px solid rgba(21, 101, 216, 0.1);
     border-radius: 16px;
     padding: 14px 13px;
+}
+.card_item:hover .item_svg{
+    border: 1px solid rgba(61, 179, 112, 0.1);
 }
 
 /* megaphone icon */
