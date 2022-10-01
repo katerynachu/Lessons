@@ -1,0 +1,171 @@
+.content {
+
+display: flex;
+justify-content: space-between;
+
+    &__image {
+        position: relative;
+        border-right: 1px solid #FFCC00;
+        max-width: 585px;
+        padding: 65px 85px 65px 70px;
+    }
+
+    &__photo {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        transition: all 2s ease;
+    }
+    &__photo:hover{
+        transform: scale(1.08);
+    }
+
+    &__wrap-img {
+        max-width: 430px;
+        padding: 15px;
+    }
+&__cub{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  
+
+}
+&__cub--left-top{
+    top: 65px;
+    left: 70px;
+    border-top: 1px solid #FFCC00;
+    border-left: 1px solid #FFCC00;
+}
+&__cub--right-top{
+    border-top: 1px solid #FFCC00;
+    border-right: 1px solid #FFCC00;
+    top: 65px;
+    right: 85px;
+}
+&__cub--left-bottom{
+    border-bottom: 1px solid #FFCC00;
+    border-left: 1px solid #FFCC00;
+    bottom: 89px;
+    left: 69px;
+}
+&__cub--right-bottom{
+    border-bottom: 1px solid #FFCC00;
+    border-right: 1px solid #FFCC00;
+    bottom: 89px;
+    right: 83px;
+}
+&__text{
+    max-width: 585px;
+    padding: 65px 85px 65px 70px;
+}
+
+&__name{
+    font-family: $roboto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: $title;
+}
+&__name::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: $gold;
+    margin: 30px auto;
+  
+}
+&__post{
+    font-family:$raleway;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: $title;
+}
+&__post--mb30{
+    margin-bottom: 30px;
+    text-align: center;
+}
+&__social{
+    max-width: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px ;
+    margin: 0 auto;
+
+}
+&__social--mb49{
+    margin-bottom: 49px;
+}
+&__social-item{
+    border-radius: 50%;
+    border: 2px solid $social;
+    align-items: center;
+    padding: 7px 6px;
+    transition: border 0.3s ease, color 1s ease;
+
+}
+&__social-item:hover{
+    border: 2px solid $gold;
+  
+}
+&__social-item:hover &__socila-svg{
+    fill: #FFCC00;
+  
+}
+&__description{
+    font-family: $raleway;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: $description;
+    letter-spacing: 0.02em;
+}
+&__slider--mb_mt{
+    max-width: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+   
+
+}
+&__little-slider{
+width: 10px;
+background-color: $gold;
+height: 4px;
+}
+&__middle-slider{
+    width: 20px;
+    background-color: $gold;
+    height: 4px;
+}
+&__block-button{
+   display: flex;
+   justify-content: center;
+}
+&__button{
+    margin: 5px auto;
+    padding: 5px 10px;
+    border: 1px solid $gold;
+    background-color: #ffff;
+    font-family: $opensans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+&__button:hover{
+    background-color: $gold;
+    color: white;
+}
+
+}

@@ -1,0 +1,12 @@
+.ourTeam{
+    @extend .section;
+    
+    &__container{
+        @extend .container;
+    }
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+    }
+   
+}

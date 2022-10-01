@@ -1,0 +1,41 @@
+.title{
+    &__subtext{
+        text-transform: uppercase;
+        font-family:$raleway;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $subtext;
+         }
+    
+        &__subtext--mb15{
+            margin-bottom: 15px;
+        }
+        &__h1{
+            font-family:$roboto;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 66px;
+            text-transform: uppercase;
+            color:$gold;
+        }
+        &__h1--mb40{
+            margin-bottom: 40px;
+        }
+        &__wrapper-svg{
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__line{
+                height: 1px;
+                width: 210px;
+                background-color: $gold;
+            }
+            &__svg{
+                margin: 0 5px;
+            }
+        }
+        
+}

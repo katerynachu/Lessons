@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container, .ourTeam__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section, .ourTeam {
+  padding: 121px 0;
+}
+
+.ourTeam__title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title__subtext {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #898F8F;
+}
+.title__subtext--mb15 {
+  margin-bottom: 15px;
+}
+.title__h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+.title__h1--mb40 {
+  margin-bottom: 40px;
+}
+.title__wrapper-svg {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title__wrapper-svg__line {
+  height: 1px;
+  width: 210px;
+  background-color: #FFCC00;
+}
+.title__wrapper-svg__svg {
+  margin: 0 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content__image {
+  position: relative;
+  border-right: 1px solid #FFCC00;
+  max-width: 585px;
+  padding: 65px 85px 65px 70px;
+}
+.content__photo {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 2s ease;
+}
+.content__photo:hover {
+  transform: scale(1.08);
+}
+.content__wrap-img {
+  max-width: 430px;
+  padding: 15px;
+}
+.content__cub {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.content__cub--left-top {
+  top: 65px;
+  left: 70px;
+  border-top: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+}
+.content__cub--right-top {
+  border-top: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+  top: 65px;
+  right: 85px;
+}
+.content__cub--left-bottom {
+  border-bottom: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+  bottom: 89px;
+  left: 69px;
+}
+.content__cub--right-bottom {
+  border-bottom: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+  bottom: 89px;
+  right: 83px;
+}
+.content__text {
+  max-width: 585px;
+  padding: 65px 85px 65px 70px;
+}
+.content__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #666666;
+}
+.content__name::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  margin: 30px auto;
+}
+.content__post {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+}
+.content__post--mb30 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.content__social {
+  max-width: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+.content__social--mb49 {
+  margin-bottom: 49px;
+}
+.content__social-item {
+  border-radius: 50%;
+  border: 2px solid #CCCCCC;
+  align-items: center;
+  padding: 7px 6px;
+  transition: border 0.3s ease, color 1s ease;
+}
+.content__social-item:hover {
+  border: 2px solid #FFCC00;
+}
+.content__social-item:hover .content__socila-svg {
+  fill: #FFCC00;
+}
+.content__description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  letter-spacing: 0.02em;
+}
+.content__slider--mb_mt {
+  max-width: 50px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.content__little-slider {
+  width: 10px;
+  background-color: #FFCC00;
+  height: 4px;
+}
+.content__middle-slider {
+  width: 20px;
+  background-color: #FFCC00;
+  height: 4px;
+}
+.content__block-button {
+  display: flex;
+  justify-content: center;
+}
+.content__button {
+  margin: 5px auto;
+  padding: 5px 10px;
+  border: 1px solid #FFCC00;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+.content__button:hover {
+  background-color: #FFCC00;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
