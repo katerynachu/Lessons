@@ -1,0 +1,14 @@
+@import 'general';
+@import 'variable';
+@import 'mixins';
+
+    // header
+@import 'header';
+    // main
+@import 'fist-screen';
+@import 'blog';
+@import 'latestPosts';
+@import 'mostPopular';
+@import 'info';
+    // footer
+@import 'footer';

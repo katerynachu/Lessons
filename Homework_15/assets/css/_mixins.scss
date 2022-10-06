@@ -1,0 +1,49 @@
+@mixin container {
+    max-width: 81%;
+    margin: 0 auto;
+}
+
+@mixin heading {
+    display: flex;
+    justify-content: space-between;
+
+    .heading {
+        &__title {
+            font-family: $redHatDisplay;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $black;
+        }
+
+        &__view {
+            @media screen and(max-width:740px) {
+                margin-top: 10px;
+
+            }
+
+            .view {
+                &__link {
+                    color: $grey500;
+                    text-decoration: none;
+                    font-family: $lato;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 166%;
+                    letter-spacing: 0.1em;
+                    transition: color 2s ease,fill 1s ease;
+
+                    &:hover {
+                        color: $black;
+                    }
+                    &:hover .link__arrow{
+                        fill: $black;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
