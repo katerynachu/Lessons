@@ -1,0 +1,23 @@
+.header{
+    &__container{
+        @include container;
+
+        @media screen and(max-width:768px) {
+            max-width: 91%;
+        }
+        @media screen and(max-width:320px) {
+            max-width: 95%;
+        }
+    }
+    &__block{
+        padding: 38px 0;
+
+        .block{
+            &__logo{
+                max-width: 15%;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

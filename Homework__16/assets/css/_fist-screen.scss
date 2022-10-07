@@ -1,0 +1,41 @@
+.fist-screen{
+    &__title{
+        max-width: 40%;
+        margin-bottom: 70px;
+        @media screen and(max-width:768px) {
+            max-width: 49%;
+            margin-bottom: 50px;
+         }
+         @media screen and(max-width:320px) {
+            max-width: 100%;
+         }
+        .title{
+            &__h1{
+                font-family: $redHatDisplay;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                letter-spacing: 0.05em;
+                color: $black;
+
+                @media screen and(max-width:768px) {
+                    font-size: 33px;
+                    line-height: 50px;
+                 }
+                 @media screen and(max-width:320px) {
+                   font-size: 30px;
+                 }
+
+            }
+        }
+    }
+    &__image{
+        max-width: 100%;
+        .image{
+            &__item{
+               width: 100%;
+               height: auto
+            }
+        }
+    }
+}

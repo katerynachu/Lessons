@@ -1,0 +1,65 @@
+@mixin container {
+    max-width: 88%;
+    margin: 0 auto;
+}
+@mixin h2 {
+    font-family: $redHatDisplay;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black;
+        @media screen and(max-width:320px) {
+          font-size: 26px;
+         }
+}
+@mixin section {
+    &__title{
+        margin-bottom: 50px;
+        @media screen and(max-width:320px) {
+            margin-bottom: 40px;
+         }
+        .title{
+            &__h2{
+                @include h2;
+            }
+        }
+    }
+    &__image{
+        max-width: 100%;
+        .image{
+            &__item{
+               width: 100%;
+               height: auto
+            }
+        }
+    }
+    &__subtext{
+        @include gap15px;
+        margin-top: 20px;
+        
+        .subtext{
+            &__p{
+                display: block;
+                @include p;
+            }
+        }
+    }
+}
+@mixin p {
+    font-family:$lato;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $grey700;
+
+    @media screen and(max-width:320px) {
+        font-size: 16px;
+     }
+}
+@mixin gap15px {
+    display: flex;
+        flex-direction:column;
+        gap:15px ;
+}

@@ -1,0 +1,148 @@
+.footer {
+    padding: 70px 0;
+    background-color: $grey100;
+
+    &__container {
+        @include container;
+
+        @media screen and(max-width:768px) {
+            max-width: 91%;
+        }
+        @media screen and(max-width:320px) {
+            max-width: 95%;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 397px;
+        align-items: center;
+
+        @media screen and(max-width:768px) {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+
+        }
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .cta {
+            &__title {
+                font-family: $redHatDisplay;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 64px;
+                letter-spacing: 0.05em;
+                color: $black;
+
+                @media screen and(max-width:320px) {
+                    max-width: 100%;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 42px;
+                    letter-spacing: 0.05em;
+
+                }
+                
+            }
+
+            &__contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-family: $lato;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: $black;
+                @media screen and(max-width:320px) {
+                   font-size: 18px;
+
+                }
+                
+            }
+        }
+    }
+
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        gap: 23px;
+        max-width: 43%;
+
+        @media screen and(max-width:768px) {
+            margin-bottom: 40px;
+
+        }
+
+        @media screen and(max-width:768px) {
+            max-width: 100%;
+        }
+
+
+        .social {
+            &__item {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #565656;
+                transition: all 1s ease;
+
+                &:hover {
+                    background-color: $grey700;
+                }
+
+                &:hover .item__svg {
+                    fill: $white;
+
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+
+    &__copyright {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media screen and(max-width:768px) {
+            margin: 0 auto;
+            max-width: 80%;
+
+        }
+
+        .copyright {
+            &__text {
+                font-family: $lato;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: $black;
+
+                @media screen and(max-width:320px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+}
