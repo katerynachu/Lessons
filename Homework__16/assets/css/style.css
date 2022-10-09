@@ -21,6 +21,16 @@
 .header__block {
   padding: 38px 0;
 }
+@media screen and (max-width: 768px) {
+  .header__block {
+    padding: 18px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__block {
+    padding: 18px 0;
+  }
+}
 .header__block .block__logo {
   max-width: 15%;
   display: flex;
@@ -29,6 +39,16 @@
 
 .main {
   margin-bottom: 90px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main {
+    margin-bottom: 70px;
+  }
 }
 .main__container {
   max-width: 88%;
@@ -269,7 +289,6 @@
 }
 
 .fist-screen__title {
-  max-width: 40%;
   margin-bottom: 70px;
 }
 @media screen and (max-width: 768px) {
@@ -314,6 +333,16 @@
   padding: 70px 0;
   background-color: #F4F4F4;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
 .footer__container {
   max-width: 88%;
   margin: 0 auto;
@@ -331,7 +360,6 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 397px;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
@@ -345,6 +373,16 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .footer__cta {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__cta {
+    gap: 20px;
+  }
 }
 .footer__cta .cta__title {
   font-family: "Red Hat Display", sans-serif;
@@ -397,8 +435,8 @@
 }
 .footer__social .social__item {
   cursor: pointer;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   width: 50px;
   height: 50px;
@@ -410,6 +448,9 @@
 }
 .footer__social .social__item:hover .item__svg {
   fill: #FFFFFF;
+}
+.footer__social .social__item .item__link {
+  display: inline-flex;
 }
 .footer__copyright {
   margin-top: 20px;

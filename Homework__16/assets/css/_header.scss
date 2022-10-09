@@ -12,6 +12,12 @@
     &__block{
         padding: 38px 0;
 
+        @media screen and(max-width:768px) {
+           padding: 18px 0;
+        }
+        @media screen and(max-width:320px) {
+            padding: 18px 0;
+        }
         .block{
             &__logo{
                 max-width: 15%;
