@@ -84,10 +84,13 @@
                     }
                     &__svg{
                         cursor: pointer;
-                        
+                        position: relative;
 
                         &:hover .svg__input{
                             display: inline-block;
+                            position: absolute;
+                            right: 16px;
+                            width: 178px;
                             
                         }
                         .svg{
@@ -97,7 +100,7 @@
                                 display: none;
                                 color: $grey500;
                                 transition: all 1s ease;
-                                max-width: 70%;
+                                // max-width: 70%;
             
                               &::placeholder{
                                 font-size: 12px;

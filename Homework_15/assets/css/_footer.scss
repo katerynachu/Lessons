@@ -1,6 +1,13 @@
 .footer {
     padding: 70px 0;
+    background-color: $grey100;
 
+    @media screen and(max-width:1224px) {
+        padding: 50px 0;
+    }
+    @media screen and(max-width:740px) {
+        padding: 50px 0;
+    }
     &__container {
         @include container;
 
@@ -13,7 +20,6 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        gap: 397px;
         align-items: center;
 
         @media screen and(max-width:1224px) {
@@ -28,6 +34,12 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @media screen and(max-width:768px) {
+            gap: 20px;
+         }
+         @media screen and(max-width:320px) {
+             gap: 20px;
+         }
 
         .cta {
             &__title {
@@ -97,6 +109,11 @@
                 &:hover .item__svg {
                     fill: $white;
 
+                }
+                .item{
+                    &__link{
+                        display: inline-flex;
+                    }
                 }
 
             }

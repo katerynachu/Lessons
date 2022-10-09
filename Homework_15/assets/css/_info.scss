@@ -30,10 +30,17 @@
          .wrapper {
              &__left {
                  max-width: 50%;
-                 // @media screen and(max-width:1440px) {
-                 //     max-width: 100%;
+                
 
-                 //    }
+                 @media screen and(max-width:1224px) {
+                   max-width: 100%;
+
+                }
+                @media screen and(max-width:740px) {
+                    max-width: 100%;
+
+
+                }
                  .left {
 
                      &__text {
@@ -43,6 +50,7 @@
                          line-height: 166%;
                          letter-spacing: 0.1em;
                          color: $black;
+                      
 
 
                      }
@@ -56,6 +64,12 @@
                          &::before {
                              content: 'Read More';
                              display: none;
+                             font-family:$lato;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 166.3%;
+                                letter-spacing: 0.1em;
+                                color: $black;
                          }
 
                          &:hover::before {
@@ -65,7 +79,13 @@
 
                          &:hover .link-svg__arrow {
                              fill: $black;
+                             margin-top: 20px;
                          }
+                         .link-svg{
+                            &__item{
+                                margin-top: 20px;
+                            }
+                        }
                      }
 
 
