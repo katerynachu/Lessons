@@ -1,0 +1,87 @@
+.main {
+    background-color: $purple;
+
+    &__container {
+        @include container;
+    }
+    &__cards {
+        padding: 120px 0;
+        display: flex;
+        justify-content: space-between;
+        gap:30px ;
+
+        .cards {
+            &__box {
+                background-color: $grey;
+
+                .box {
+                    &__heading {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        text-align: center;
+                        padding: 0 70px;
+                        margin-bottom: 70px;
+                        margin-top: 40px;
+
+                        .heading {
+                            &__price {
+
+                                margin: 0 auto;
+
+                                .price {
+
+                                    &__number {
+                                        @include number;
+                                    }
+                                }
+                            }
+
+                            &__title {
+
+                                .title {
+                                    &__text {
+                                        @include title;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__services{
+                        max-width: 100%;
+                        background-image: url(../img/bg-image.png);
+                        background-position: center;
+                        padding: 0 40px;
+                        text-align: center;
+                        margin-bottom: 60px;
+                        .services{
+
+                            
+                            &__list{
+                                margin-top: 40px;
+                                text-align: left;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+
+                                .list{
+                                    
+                                    &__item{
+                                        @include list-item;
+                                        
+                                    }
+                                   
+                                }
+                            }
+                        }
+                    
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+   

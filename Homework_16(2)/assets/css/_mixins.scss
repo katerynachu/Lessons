@@ -1,0 +1,39 @@
+@mixin container {
+    max-width:84% ;
+    margin: 0 auto;
+}
+@mixin number {
+    // font-family: $bebasNeuethin;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.08em;
+    color: $black;
+
+}
+@mixin title {
+    // font-family: ;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: black;
+}
+@mixin list-item {
+    font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: $black;
+
+}
+@mixin button {
+    padding:20px 50px ;
+    // font-family:$bebasNeue;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}

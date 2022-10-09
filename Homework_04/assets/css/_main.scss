@@ -1,0 +1,407 @@
+.main {
+    background-color: $bg;
+
+    &__container {
+        @include container;
+    }
+
+    &__forms {
+        max-width: 100%;
+        padding: 55px 0;
+        display: flex;
+        gap: 30px;
+
+        .forms {
+
+            &__account,
+            &__profile {
+                background-color: $white;
+                padding: 35px 35px 0 35px;
+                width: 50%;
+                border-radius: 6px;
+
+
+            }
+
+            &__h2 {
+                @include h2;
+                @include mb20px;
+            }
+
+        }
+
+
+    }
+
+}
+
+.account {
+    @include flex-column;
+    gap: 20px;
+
+    &__name {
+        display: flex;
+        gap: 12px;
+
+        .name {
+
+            &__fist,
+            &__last {
+                @include flex-column;
+                @include title;
+                width: 50%;
+
+            }
+
+            &__input {
+                @include input-text;
+                outline: none;
+                &:focus{
+                    border: 1px solid $blue;
+
+                }
+            }
+
+        }
+    }
+
+    &__email {
+        @include flex-column;
+
+        .email {
+            &__input {
+                @include input-text;
+                outline: none;
+                margin-bottom: 7px;
+
+                &:focus:invalid {
+                    border: 1px solid $red;
+                }
+
+                &:valid {
+                    border: 1px solid green;
+                }
+            }
+
+            &__label {
+                @include title;
+            }
+
+            &__text {
+                @include small-text;
+            }
+        }
+    }
+
+    &__gender {
+        display: flex;
+        gap: 20px;
+
+        .gender {
+            &__input {
+                display: none;
+
+                &:checked+.gender__name {
+                    .gender__radio::before {
+                        transform: scale(1);
+                        transition: all 1s ease;
+                    }
+                }
+            }
+
+            &__male,
+            &__female {
+                @include radio;
+            }
+
+            &__radio {
+                display: block;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #E4E4E4;
+                border-radius: 50%;
+                margin-right: 8px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: -1px;
+                    bottom: -1px;
+                    width: 8px;
+                    height: 8px;
+                    border: 6px solid $blue;
+                    border-radius: 50%;
+                    transform: scale(0);
+
+                }
+            }
+
+            &__name {
+                display: flex;
+                align-items: center;
+
+                font-family: $roboto;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+                color: $grey;
+
+            }
+
+        }
+    }
+
+    &__site {
+@include site;
+    }
+
+
+    &__button {
+        .button {
+            &__item {
+                width: 100%;
+                cursor: pointer;
+                @include button;
+            }
+        }
+    }
+
+    &__text {
+        width: 72%;
+        margin: 0 auto;
+
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        color: $more-grey;
+
+        .text {
+            &__link {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+
+    &__devider {
+        height: 1px;
+        width: 100%;
+        background-color: $bg;
+    }
+
+    &__bottom-text {
+        margin-bottom: 18px;
+        text-align: center;
+        @include title;
+
+        .bottom-text {
+            &__link {
+                text-decoration: none;
+                color: $blue;
+                font-weight: 500;
+                margin-left: 20px;
+            }
+        }
+
+    }
+
+}
+
+.profile {
+    @include flex-column;
+    gap: 20px;
+
+    &__file {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .file {
+            &__input {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                gap: 9px;
+
+                .input {
+                    &__item {
+                        display: none;
+
+
+
+                    }
+
+                    &__style {
+                        display: block;
+                        @include input-text;
+                        padding: 6px 10px;
+                        min-height: 30px;
+                    }
+
+                    &__img {
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        right: 8px;
+                        bottom: 35px;
+
+                        .img {
+                            &__path {
+                                fill: $more-grey;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        @include small-text;
+                    }
+                }
+            }
+
+            &__button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border: 1px solid $border;
+                background-color: $white;
+                border-radius: 6px;
+                width: 30px;
+                height: 30px;
+                margin-bottom: 26px;
+
+
+                .button {
+                    &__svg {
+                        width: 16px;
+                        height: 16px;
+
+                        .svg {
+                            &__path {
+                                fill: $more-grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__fist-field {
+        display: flex;
+        gap: 12px;
+
+        .fist-field{
+            &__name {
+                @include flex-column;
+                @include title;
+                width: 50%;
+
+                .name{
+                    &__input{
+                        @include input-text;
+                        outline: none;
+
+                        &:focus{
+                            border: 1px solid $blue;
+                    
+                        }
+                    }
+                }
+            }
+            &__email{
+                @include flex-column;
+                @include title;
+                width: 50%;
+        .email{
+            &__input{
+                @include input-text;
+                outline: none;
+
+                &:focus:invalid {
+                    border: 1px solid $red;
+                }
+
+                &:valid {
+                    border: 1px solid green;
+                }
+            }
+        }
+                
+            }
+           
+        }
+       
+    }
+    &__site{
+        @include site;
+    }
+    &__last-field{
+        display: flex;
+        gap: 12px;
+
+        .last-field{
+            &__zip{
+                @include flex-column;
+                @include title;
+                width: 50%;
+
+                .zip{
+                    &__input{
+                        @include input-text;
+                outline: none;
+
+                &:focus:invalid {
+                    border: 1px solid $red;
+                }
+
+                &:focus:valid {
+                    border: 1px solid green;
+                }
+                    }
+                }
+            }
+            &__number{
+                @include flex-column;
+                @include title;
+                width: 50%;
+
+                .number{
+                    &__input{
+                        @include input-text;
+                        outline: none;
+                        color: $more-grey;
+
+                       
+                    
+                        &:focus:invalid {
+                            border: 1px solid $red;
+                        }
+        
+                        &:focus:valid {
+                            border: 1px solid green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+
+        .button {
+            &__item {
+                width: 30%;
+                cursor: pointer;
+                @include button;
+            }
+        }
+    }
+    
+}

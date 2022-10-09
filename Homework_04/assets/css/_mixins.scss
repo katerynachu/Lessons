@@ -1,0 +1,153 @@
+@mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin h2 {
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: $black;
+}
+@mixin mb20px {
+    margin-bottom: 20px;
+}
+@mixin title {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+
+    color: $grey;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+@mixin input-text {
+    min-height: 38px;
+    border: 1px solid $border;
+    border-radius: 6px;
+    padding: 0px 5px;
+    color: $more-grey;
+    
+}
+@mixin required {
+    border: 1px solid $red;
+}
+@mixin small-text {
+    font-family: $roboto;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.1px;
+
+                color: $more-grey;
+}
+@mixin radio {
+    display: flex;
+    align-items: center;
+}
+@mixin button {
+    padding: 8px 10px;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: $white;
+}
+@mixin site {
+    display: flex;
+    gap: 12px;
+
+    .site {
+
+        &__country,
+        &__city {
+            @include flex-column;
+            width: 50%;
+
+        }
+
+        &__country {
+            position: relative;
+
+            .country {
+                &__label {
+                    @include title;
+                }
+
+                &__select {
+                    @include input-text;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    font-family: $inter;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: -0.2px;
+                    outline: none;
+                    
+
+                    &::-webkit-inner-spin-button,
+                    &::-webkit-outer-spin-button {
+                        appearance: 0;
+                    }
+
+                }
+
+                &__svg {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                    width: 18px;
+                    height: 18px;
+
+                    .svg {
+                        &__path {
+                            fill: $more-grey;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+
+
+        &__city {
+            .city {
+                &__label {
+                    @include title;
+                }
+
+                &__input {
+                    @include input-text;
+                    outline: none;
+
+                    &:focus{
+                        border: 1px solid $blue;
+                
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}

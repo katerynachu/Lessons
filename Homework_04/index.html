@@ -5,85 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>My FORMS</title>
 </head>
 
 <body>
-    <!-- br використаний лише для естетичного вигляду -->
-    <h2>Create an Account</h2>
-    <form action="#" name="create_account" method="get">
-        <label for="field1">Fist Name</label>
-        <input id="field1" required name="fistname" type="text">
-        <label for="field2">Last Name</label>
-        <input id="field2" required name="lastame" type="text">
-        <br>
-        <label for="field3">E-mail</label>
-        <input id="field3" required name="email" type="email">
-        <p>
-            We'll never share your email with anyone else.
-        </p>
-        <input type="radio" name="gender" id="radio_male" value="Male" checked>
-        <label for="radio_male">Male</label>
-        <input type="radio" name="gender" id="radio_female" value="Female">
-        <label for="radio_female">Female</label>
-        <br>
-        <br>
-        <label for="select_country">Country</label>
-        <br>
-        <select name="country" id="select_country" required>
-            <option value="" selected disabled hidden>Select</option>
-            <option value="item_1">Ukraine</option>
-            <option value="item_2">Poland</option>
-            <option value="item_3">France</option>
-            <option value="item_4">Spain</option>
-        </select>
-        <label for="text_city">City</label>
-        <input type="text" name="city" required id="text_city">
-        <br>
-        <br>
-        <button type="submit">Sign Up</button>
-        <br>
-        <p>
-            By clicking the 'Sign Up' button, you confirm that you accept our
-            <a href="#">Tems of Use</a> and <a href="#">Privacy Policy</a>
-        </p>
-        <hr>
-        <p>Have an account? <a href="#">Log In</a></p>
-    </form>
-    <h2>Profile</h2>
-    <form action="#" name="profile" method="post">
-        <img src="img/7. Userpic/📷 Image.png" alt="Photo user">
-        <input type="file" accept="img/*">
-        <button type="button">Delete</button>
-        <p>Up to 1 MB (300x300 px)</p>
-        <br>
-        <label for="profile_name">Name</label>
-        <input type="text" name="name" required id="profile_name">
-        <label for="profile_email">E-mail</label>
-        <input type="email" name="email" required id="profile_email">
-        <br>
-        <br>
-        <label for="profile_country">Country</label>
-        <br>
-        <select name="country" id="profile_country" required>
-            <option value="" selected disabled hidden>Select</option>
-            <option value="item_1">Ukraine</option>
-            <option value="item_2">Poland</option>
-            <option value="item_3">France</option>
-            <option value="item_4">Spain</option>
-        </select>
-        <label for="profile_city">City</label>
-        <input type="text" id="profile_city" required>
-        <br>
-        <br>
-        <label for="zip_code">Zip Code</label>
-        <input type="text" name="zipcode" id="zip_code">
-        <label for="profile_number">Phone Number</label>
-        <input type="tel" name="tel" id="profile_number" required>
-        <br>
-        <br>
-        <button type="submit">Update</button>
-    </form>
+    <main class="main">
+        <div class="main__container">
+            <div class="main__forms">
+                <div class="forms__account">
+                    <h2 class="forms__h2">Create an Account</h2>
+                    <form class="account" action="#" name="create_account" method="get">
+                        <div class="account__name">
+                            <div class="name__fist">
+                                <label for="field1">Fist Name</label>
+                                <input class="name__input" id="field1" required name="fistname" type="text">
+                            </div>
+                            <div class="name__last">
+                                <label for="field2">Last Name</label>
+                                <input class="name__input" id="field2" required name="lastame" type="text">
+                            </div>
+
+                        </div>
+                        <div class="account__email">
+                            <label class="email__label" for="field3">E-mail</label>
+                            <input class="email__input" id="field3" required name="email" type="email">
+                            <p class="email__text">
+                                We'll never share your email with anyone else.
+                            </p>
+                        </div>
+                        <div class="account__gender">
+                            <div class="gender__male">
+                                <input class="gender__input" type="radio" name="gender" id="radio_male" value="Male"
+                                    checked>
+                                <label class="gender__name" for="radio_male">
+                                    <span class="gender__radio"></span>Male</label>
+                            </div>
+                            <div class="gender__female">
+                                <input class="gender__input" type="radio" name="gender" id="radio_female"
+                                    value="Female">
+                                <label class="gender__name" for="radio_female"> <span
+                                        class="gender__radio"></span>Female</label>
+                            </div>
+                        </div>
+                        <div class="account__site">
+                            <div class="site__country">
+                                <label class="country__label" for="select_country">Country</label>
+                                <select class="country__select" name="country" id="select_country" required>
+                                    <option value="" selected disabled hidden>Select</option>
+                                    <option value="item_1">Ukraine</option>
+                                    <option value="item_2">Poland</option>
+                                    <option value="item_3">France</option>
+                                    <option value="item_4">Spain</option>
+                                </select>
+
+                                <svg class="country__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path class="svg__path"
+                                        d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="site__city">
+                                <label class="city__label" for="city__label">City</label>
+                                <input class="city__input" type="text" name="city" required id="text_city">
+                            </div>
+                        </div>
+                        <div class="account__button">
+                            <button class="button__item" type="submit">Sign Up</button>
+                        </div>
+
+                        <div class="account__text">
+                            By clicking the 'Sign Up' button, you confirm that you accept our
+                            <a class="text__link" href="#">Tems of Use</a> and <a class="text__link" href="#">Privacy
+                                Policy</a>
+                        </div>
+                        <span class="account__devider"></span>
+                        <p class="account__bottom-text">Have an account? <a class="bottom-text__link" href="#">Log
+                                In</a></p>
+                    </form>
+                </div>
+                <div class="forms__profile">
+                    <h2 class="forms__h2">Profile</h2>
+                    <form class="profile" action="#" name="profile" method="post">
+                        <div class="profile__file">
+                            <img src="assets/img/📷 Image.png" alt="Photo user">
+                            <div class="file__input">
+                                <input class="input__item" id="input__file" type="file" accept="img/*">
+                                <label class="input__img" for="input__file"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path class="img__path"
+                                            d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 384c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z" />
+                                    </svg></label>
+                                    <span class="input__style"></span>
+                               
+                                <p class="input__text">Up to 1 MB (300x300 px)</p>
+                            </div>
+                            <button class="file__button" type="reset">
+                                <svg class="button__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path class="svg__path"
+                                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                </svg></button>
+
+
+
+                        </div>
+                        <div class="profile__fist-field">
+                            <div class="fist-field__name">
+                                <label for="profile_name">Name</label>
+                                <input class="name__input" type="text" name="name" required id="profile_name">
+                            </div>
+                            <div class="fist-field__email">
+                                <label for="profile_email">E-mail</label>
+                                <input class="email__input" type="email" name="email" required id="profile_email">
+                            </div>
+                        </div>
+
+                        <div class="profile__site">
+                            <div class="site__country">
+                                <label class="country__label" for="select_country">Country</label>
+                                <select class="country__select" name="country" id="select_country" required>
+                                    <option value="" selected disabled hidden>Select</option>
+                                    <option value="item_1">Ukraine</option>
+                                    <option value="item_2">Poland</option>
+                                    <option value="item_3">France</option>
+                                    <option value="item_4">Spain</option>
+                                </select>
+
+                                <svg class="country__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path class="svg__path"
+                                        d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="site__city">
+                                <label class="city__label" for="city__label">City</label>
+                                <input class="city__input" type="text" name="city" required id="text_city">
+                            </div>
+                        </div>
+                        <div class="profile__last-field">
+                            <div class="last-field__zip">
+                                <label class="zip__label" for="zip_code">Zip Code</label>
+                                <input class="zip__input" pattern="[0-9]{6}" type="text" name="zipcode" id="zip_code">
+                            </div>
+                            <div class="last-field__number"> <label for="profile_number">Phone Number</label>
+                            <input class="number__input" pattern="^[0-9]+$" type="tel" max="14" min="1" value="380" name="tel" id="profile_number" required>
+                            </div>
+
+                        </div>
+                        <div class="profile__button">
+                            <button class="button__item" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
 </body>
 
 </html>
