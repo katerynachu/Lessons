@@ -5,7 +5,7 @@
     @media screen and(max-width:1224px) {
         padding: 50px 0;
     }
-    @media screen and(max-width:740px) {
+    @media screen and(max-width:768px) {
         padding: 50px 0;
     }
     &__container {
@@ -50,7 +50,7 @@
                 letter-spacing: 0.05em;
                 color: $black;
 
-                @media screen and(max-width:740px) {
+                @media screen and(max-width:768px) {
                     max-width: 100%;
                     font-weight: 400;
                     font-size: 32px;
@@ -86,7 +86,7 @@
 
         }
 
-        @media screen and(max-width:740px) {
+        @media screen and(max-width:768px) {
             max-width: 100%;
         }
 
@@ -130,7 +130,7 @@
         margin-bottom: 30px;
         text-align: center;
 
-        @media screen and(max-width:740px) {
+        @media screen and(max-width:768px) {
             margin: 0 auto;
             max-width: 80%;
 
@@ -145,7 +145,7 @@
                 letter-spacing: 0.1em;
                 color: $black;
 
-                @media screen and(max-width:740px) {
+                @media screen and(max-width:768px) {
                     font-size: 16px;
                 }
             }

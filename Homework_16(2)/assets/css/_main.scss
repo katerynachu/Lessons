@@ -1,87 +1,339 @@
 .main {
     background-color: $purple;
+    padding: 120px 0;
 
     &__container {
         @include container;
     }
+
+    // &__cards {
+    //     padding: 120px 0;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap:30px ;
+
+    //     .cards {
+    //         &__box {
+    //             background-color: $grey;
+
+    //             .box {
+    //                 &__heading {
+    //                     display: flex;
+    //                     flex-direction: column;
+    //                     gap: 20px;
+    //                     text-align: center;
+    //                     padding: 0 70px;
+    //                     margin-bottom: 70px;
+    //                     margin-top: 40px;
+
+    //                     .heading {
+    //                         &__price {
+
+    //                             margin: 0 auto;
+
+    //                             .price {
+
+    //                                 &__number {
+    //                                     @include number;
+    //                                 }
+    //                             }
+    //                         }
+
+    //                         &__title {
+
+    //                             .title {
+    //                                 &__text {
+    //                                     @include title;
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //                 &__services{
+    //                     max-width: 100%;
+    //                     background-image: url(../img/bg-image.png);
+    //                     background-position: center;
+    //                     padding: 0 40px;
+    //                     text-align: center;
+    //                     margin-bottom: 60px;
+    //                     .services{
+
+
+    //                         &__list{
+    //                             margin-top: 40px;
+    //                             text-align: left;
+    //                             display: flex;
+    //                             flex-direction: column;
+    //                             gap: 30px;
+
+    //                             .list{
+
+    //                                 &__item{
+    //                                     @include list-item;
+
+    //                                 }
+
+    //                             }
+    //                         }
+    //                     }
+
+    //                 }
+
+    //             }
+    //         }
+    //     }
+    // }
+
     &__cards {
-        padding: 120px 0;
         display: flex;
-        justify-content: space-between;
-        gap:30px ;
+        justify-content: center;
+        gap: 30px;
+
 
         .cards {
             &__box {
                 background-color: $grey;
+                position: relative;
+                transition: all 1s ease;
+                transform: scale(1);
+
+
+
+
 
                 .box {
                     &__heading {
+                        padding: 0 70px 0 70px;
                         display: flex;
                         flex-direction: column;
+                        align-items: center;
                         gap: 20px;
-                        text-align: center;
-                        padding: 0 70px;
-                        margin-bottom: 70px;
+
                         margin-top: 40px;
+                        margin-bottom: 30px;
+
+
+
+
 
                         .heading {
                             &__price {
+                                position: relative;
+                                font-family: $bebasNeue;
+                                font-size: 60px;
+                                line-height: 60px;
+                                letter-spacing: 0.08em;
 
-                                margin: 0 auto;
+                                &::before {
+                                    content: '$';
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    position: absolute;
+                                    top: 2px;
+                                    left: -9px;
+                                }
 
-                                .price {
-
-                                    &__number {
-                                        @include number;
-                                    }
+                                &::after {
+                                    content: '/HR';
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                    position: absolute;
+                                    bottom: 9px;
+                                    right: -28px;
                                 }
                             }
 
                             &__title {
-
-                                .title {
-                                    &__text {
-                                        @include title;
-                                    }
-                                }
+                                font-family: $bebasNeue;
+                                font-size: 24px;
+                                line-height: 28px;
+                                letter-spacing: 0.04em;
                             }
                         }
                     }
-                    &__services{
-                        max-width: 100%;
-                        background-image: url(../img/bg-image.png);
-                        background-position: center;
-                        padding: 0 40px;
-                        text-align: center;
-                        margin-bottom: 60px;
-                        .services{
 
-                            
-                            &__list{
-                                margin-top: 40px;
-                                text-align: left;
+                    &__services {
+                        padding: 40px 110px 60px 110px;
+                        // margin-bottom: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-image: url(../img/bg-image.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center top;
+
+                        .services {
+                            &__list {
+                                list-style: none;
                                 display: flex;
                                 flex-direction: column;
+                                align-items: flex-start;
                                 gap: 30px;
 
-                                .list{
-                                    
-                                    &__item{
-                                        @include list-item;
-                                        
+                                margin-top: 40px;
+
+                                .list {
+                                    &__item {
+                                        font-family: $roboto;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        letter-spacing: 0.04em;
                                     }
-                                   
                                 }
+
                             }
                         }
-                    
                     }
 
+                    &__btn {
+                        padding-bottom: 57px;
+                        max-height: 57px;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        transition: all 2s ease;
+
+                    }
                 }
+            }
+
+
+
+        }
+    }
+
+}
+
+.btn {
+    &__item {
+        cursor: pointer;
+        padding: 20px 50px;
+        background-color: $blue-light;
+        border-radius: 30px;
+        border: unset;
+        font-family: $bebasNeue;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: $white;
+        transition: all 1s ease;
+
+        position: absolute;
+        bottom: -27px;
+    }
+
+    &__text {
+        display: none;
+        margin-top: 20px;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #A9A9A9;
+    }
+
+}
+
+.cards {
+    &__box {
+        &:hover {
+            transform: scale(1.1);
+
+            .box__btn {
+                padding-top: 35px;
+            }
+
+            .btn__text {
+                display: block;
+            }
+
+            .box__buble {
+                display: block;
+            }
+
+            .btn__item {
+                background-color: $red;
+                position: absolute;
+                bottom: 60px;
+
+
             }
         }
     }
 
 }
 
+.box {
    
+    &__buble {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 16px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $red;
+
+       
+
+        &:hover {
+            .buble__label{
+                display: block;
+            }
+        }
+
+        &::after {
+            content: url("../img/bubble.png");
+            position: absolute;
+            top: -10px;
+            right: -21px;
+
+
+
+
+
+        }
+
+        .buble {
+            &__text {
+                padding: 15px 19px;
+                font-family: $bebasNeue;
+                font-size: 24px;
+                line-height: 24px;
+                color: $white;
+            }
+            &__label {
+                position: absolute;
+                background-image: url(../img/tooltip\ bg.png);
+                background-repeat: no-repeat;
+                top: 10px;
+    left: 56px;
+                display: none;
+        
+        
+              .label{
+                  &__text {
+                    font-family: $bebasNeue;
+                    padding: 8px 24px;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: $white;
+                }
+              }
+            }
+
+    
+        }
+    }
+    
+}
