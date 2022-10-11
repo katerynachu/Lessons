@@ -85,8 +85,12 @@
     // }
 
     &__cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         gap: 30px;
 
 
@@ -94,8 +98,12 @@
             &__box {
                 background-color: $grey;
                 position: relative;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
                 transition: all 1s ease;
-                transform: scale(1);
+                -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                        transform: scale(1);
 
 
 
@@ -104,9 +112,16 @@
                 .box {
                     &__heading {
                         padding: 0 70px 0 70px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
                         gap: 20px;
 
                         margin-top: 40px;
@@ -156,9 +171,16 @@
                     &__services {
                         padding: 40px 110px 60px 110px;
                         // margin-bottom: 60px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
                         background-image: url(../img/bg-image.png);
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -167,9 +189,16 @@
                         .services {
                             &__list {
                                 list-style: none;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
                                 display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                -webkit-box-orient: vertical;
+                                -webkit-box-direction: normal;
+                                    -ms-flex-direction: column;
+                                        flex-direction: column;
+                                -webkit-box-align: start;
+                                    -ms-flex-align: start;
+                                        align-items: flex-start;
                                 gap: 30px;
 
                                 margin-top: 40px;
@@ -191,9 +220,15 @@
                     &__btn {
                         padding-bottom: 57px;
                         max-height: 57px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                         position: relative;
+                        -webkit-transition: all 2s ease;
+                        -o-transition: all 2s ease;
                         transition: all 2s ease;
 
                     }
@@ -220,6 +255,8 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         color: $white;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
         transition: all 1s ease;
 
         position: absolute;
@@ -243,7 +280,9 @@
 .cards {
     &__box {
         &:hover {
-            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1);
 
             .box__btn {
                 padding-top: 35px;
@@ -270,7 +309,7 @@
 }
 
 .box {
-   
+
     &__buble {
         display: none;
         position: absolute;
@@ -281,10 +320,10 @@
         border-radius: 50%;
         background-color: $red;
 
-       
+
 
         &:hover {
-            .buble__label{
+            .buble__label {
                 display: block;
             }
         }
@@ -309,31 +348,32 @@
                 line-height: 24px;
                 color: $white;
             }
+
             &__label {
                 position: absolute;
                 background-image: url(../img/tooltip\ bg.png);
                 background-repeat: no-repeat;
                 top: 10px;
-    left: 56px;
+                left: 56px;
                 display: none;
-        
-        
-              .label{
-                  &__text {
-                    font-family: $bebasNeue;
-                    padding: 8px 24px;
-                    letter-spacing: 0.04em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 16px;
-                    color: $white;
+
+
+                .label {
+                    &__text {
+                        font-family: $bebasNeue;
+                        padding: 8px 24px;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: $white;
+                    }
                 }
-              }
             }
 
-    
+
         }
     }
-    
+
 }
