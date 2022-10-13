@@ -1,6 +1,7 @@
 .header {
     margin-top: 30px;
     margin-bottom: 68px;
+
     // margin-left: 25px;
     &__container {
         @include container;
@@ -13,28 +14,56 @@
         padding: 20px 20px;
         @include flex-row-center;
     }
-    &__quick-panel{
+
+    &__quick-panel {
         @include flex-row-center;
         gap: 20px;
-    }
-    &__quick-setting{
-        @include flex-row-center;
-        gap: 50px;
-    }
-    &__lang{
-        @include flex-row-center;
-        gap: 20px;
-    }
-    &__setting{
-        @include flex-row-center;
-        gap: 20px;
-    }
-    &__fist-screen{
-        margin-top: 68px;
-        .fist-screen{
-            &__img{
-                max-width: 100%;
+
+        .quick-panel {
+            &__svg {
+                cursor: pointer;
+                transition: all 1s ease;
+                &:hover .svg__path {
+                    fill: $purple-light;
+                }
             }
         }
+
     }
+
+
+&__quick-setting {
+    @include flex-row-center;
+    gap: 50px;
+}
+
+&__lang {
+    @include flex-row-center;
+    gap: 20px;
+}
+
+&__setting {
+    @include flex-row-center;
+    gap: 20px;
+}
+&__avatar{
+    position: relative;
+    .avatar{
+        &__svg{
+            position: absolute;
+            right: 0;
+            bottom: 3px;
+        }
+    }
+}
+
+&__fist-screen {
+    margin-top: 68px;
+
+    .fist-screen {
+        &__img {
+            max-width: 100%;
+        }
+    }
+}
 }
