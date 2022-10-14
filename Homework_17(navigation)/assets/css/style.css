@@ -113,6 +113,7 @@ body {
 }
 .sidebar__arrow-input:checked ~ .sidebar__wrapper .categories__item {
   padding: 10px 15px;
+  width: 220px;
 }
 .sidebar__arrow-input:checked ~ .sidebar__wrapper .categories__dashboard {
   padding: 10px 15px;
