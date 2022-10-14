@@ -22,7 +22,11 @@
         .quick-panel {
             &__svg {
                 cursor: pointer;
-                transition: all 1s ease;
+                .svg{
+                    &__path{
+                        transition: all 1s ease;
+                    }
+                }
                 &:hover .svg__path {
                     fill: $purple-light;
                 }
@@ -45,6 +49,20 @@
 &__setting {
     @include flex-row-center;
     gap: 20px;
+    .setting {
+        &__svg {
+            cursor: pointer;
+           .svg{
+            &__path{
+                transition: all 1s ease;
+            }
+           }
+            &:hover .svg__path {
+                fill: $purple-light;
+            }
+        }
+    }
+
 }
 &__avatar{
     position: relative;
@@ -58,7 +76,7 @@
 }
 
 &__fist-screen {
-    margin-top: 68px;
+   display: inline-block;
 
     .fist-screen {
         &__img {

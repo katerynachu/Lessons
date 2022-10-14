@@ -93,7 +93,9 @@
     &__item {
         padding: 10px 30px;
         gap: 20px;
+        height: 46px;
         display: flex;
+        align-items: center;
         cursor: pointer;
         transition: color .5s ease, background-color .3s linear ;
 

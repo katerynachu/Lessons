@@ -5,7 +5,7 @@
 }
 
 body {
-  display: flex;
+  display: inline-flex;
 }
 
 .header {
@@ -33,6 +33,8 @@ body {
 }
 .header__quick-panel .quick-panel__svg {
   cursor: pointer;
+}
+.header__quick-panel .quick-panel__svg .svg__path {
   transition: all 1s ease;
 }
 .header__quick-panel .quick-panel__svg:hover .svg__path {
@@ -56,6 +58,15 @@ body {
   align-items: center;
   gap: 20px;
 }
+.header__setting .setting__svg {
+  cursor: pointer;
+}
+.header__setting .setting__svg .svg__path {
+  transition: all 1s ease;
+}
+.header__setting .setting__svg:hover .svg__path {
+  fill: #9E8CFC;
+}
 .header__avatar {
   position: relative;
 }
@@ -65,7 +76,7 @@ body {
   bottom: 3px;
 }
 .header__fist-screen {
-  margin-top: 68px;
+  display: inline-block;
 }
 .header__fist-screen .fist-screen__img {
   max-width: 100%;
@@ -137,7 +148,9 @@ body {
 .categories__item {
   padding: 10px 30px;
   gap: 20px;
+  height: 46px;
   display: flex;
+  align-items: center;
   cursor: pointer;
   transition: color 0.5s ease, background-color 0.3s linear;
 }
