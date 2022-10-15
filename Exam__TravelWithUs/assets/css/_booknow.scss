@@ -1,0 +1,26 @@
+.booknow{
+    background-image: url(../img/render-14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container{
+        @include container;
+    }
+    &__block{
+        padding: 220px 0 120px 0;
+       .block{
+        @include booknow-block;
+       }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.booknow--second{
+    background-image: url(../img/spain-18.png);
+    background-repeat: no-repeat;
+    &__wrapper{
+        flex-direction: row-reverse;
+    }
+}

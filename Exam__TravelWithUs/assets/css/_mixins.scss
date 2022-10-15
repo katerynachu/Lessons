@@ -1,0 +1,144 @@
+@mixin container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin h1 {
+    font-family: $Josefinsans;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin h2 {
+    font-family: $aleo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: $white;
+}
+
+@mixin h5 {
+    font-family: $Josefinsans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $white;
+}
+@mixin logo-text {
+    font-family: $Josefinsans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white;
+    
+}
+
+@mixin subtext {
+    font-family: $Josefinsans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.31em;
+    color: $white;
+}
+
+@mixin subtext-grey {
+    font-family: $Josefinsans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: $white;
+
+
+}
+
+@mixin btn {
+    background-color: $accent;
+    color: $white;
+    border: 1px solid transparent;
+    transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, box-shadow 1s linear ;
+    
+}
+
+@mixin body-text {
+    font-family: $Josefinsans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+   
+}
+
+@mixin button-text {
+    font-family: $aleo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $white;
+
+}
+
+@mixin booknow-block {
+    &__spain {
+        background: rgba(35, 35, 35, 0.9);
+        padding: 44px 32px;
+        max-width: 52%;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    &__subtext {
+        font-family: $Josefinsans;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: $white;
+    }
+
+    &__h5 {
+        @include h5;
+    }
+
+    &__description {
+        @include subtext-grey;
+    }
+
+    &__button {
+        @include btn;
+        @include button-text;
+        padding: 19px 55px;
+        &:hover{
+            @include btn-hover;
+        }
+        &:active{
+            background-color: #2d4196;
+            box-shadow: 10px 5px 5px $white;
+        }
+    }
+}
+@mixin btn-hover {
+    background-color: $white;
+    color: $accent;
+    box-shadow:60px -15px $accent;
+    border: 1px solid $accent;
+}

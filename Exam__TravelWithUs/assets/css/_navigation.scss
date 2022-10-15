@@ -1,0 +1,35 @@
+.navigation {
+    background-color: $accent;
+    padding: 28px 0;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+       @include logo-text;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__item {
+        text-decoration: none;
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+}

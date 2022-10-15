@@ -1,0 +1,48 @@
+.steps {
+    background-color: $dark-grey;
+    padding: 107px 0 60px 0;
+    background-image: url(../img/Line.png);
+    background-repeat: no-repeat;
+    background-position: center 52px;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        background-color: $dark-grey;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 364px;
+        padding: 12px 73px 0 73px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $white;
+
+    }
+
+    &__svg--darker {
+        fill: $accent-darker;
+    }
+
+    &__svg--red {
+        fill: $red;
+    }
+
+    &__svg--blue {
+        fill: $blue;
+    }
+}

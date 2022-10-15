@@ -1,0 +1,105 @@
+.header {
+    background-image: url(../img/HeaderBackground.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 295px 0 160px 0;
+
+    &__container {
+        max-width: 647px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+
+    }
+
+    &__h1 {
+        margin-bottom: 8px;
+        @include h1;
+    }
+
+    &__subtext {
+        @include subtext;
+    }
+
+    &__input {
+        border: unset;
+        width: 617px;
+        padding: 21px 0 21px 36px;
+        margin-bottom: 211px;
+
+        &::placeholder {
+            @include body-text;
+            color: $text-grey;
+        }
+    }
+
+    &__search {
+        position: relative;
+    }
+
+    &__label {
+        position: absolute;
+        right: -1px;
+        top: 4px;
+    }
+
+    &__svg-search {
+        fill: $white;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 24px;
+        @include btn;
+        @include button-text;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+
+        &:hover{
+            background-color: #2d4196;
+        }
+
+
+
+
+    }
+
+    &__scrolldown {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        gap: 4px;
+
+        &:hover{
+            & .header__scroll-text{
+                color: $accent;
+            }
+            & .header__scroll-link{
+                fill: $accent;
+            }
+        }
+    }
+
+
+    &__scroll-text {
+        @include body-text;
+        color: $white;
+        transition:color 0.7s ease;
+        
+       
+       
+    }
+
+    &__scroll-link {
+        fill: $white;
+        transition:fill 0.5s ease;
+       
+        
+
+    }
+}
