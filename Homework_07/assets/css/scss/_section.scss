@@ -1,0 +1,67 @@
+.section {
+    @include container;
+
+
+    &__wrapper {
+        @include margin-100;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        @include flex-col;
+        gap: 40px;
+        max-width: 43.8%;
+    }
+
+    &__title {
+        @include flex-col;
+        gap: 20px;
+    }
+
+    &__subtext {
+        @include subtext;
+    }
+
+    &__h2 {
+        @include h2;
+    }
+}
+
+.list {
+    @include flex-col;
+    gap: 30px;
+
+    &__item {
+        @include flex-col;
+        gap: 10px;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__description {
+        font-family: $monserat;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $body-text;
+    }
+
+}
+
+.wrapper-middle {
+    flex-direction: row-reverse;
+}
+
+.list__item--middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.list--middle{
+    max-width: 505px;
+}

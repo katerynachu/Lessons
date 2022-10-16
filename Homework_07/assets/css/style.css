@@ -16,10 +16,13 @@ body{
     margin: 0 auto;
 }
 header{
+    
     margin-bottom: 50px;
 }
-.header div{
-    display: inline-block;
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 142px;
 }
 img.logo{
     max-width: 200px;
@@ -28,7 +31,7 @@ img.logo{
 }
 .menu{
     padding: 26px 0;
-    margin: 0 198px;
+    /* margin: 0 198px; */
 }
 .menu li{
 display: inline-block;

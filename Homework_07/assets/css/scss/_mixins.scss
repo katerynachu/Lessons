@@ -1,0 +1,32 @@
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin margin-100{
+    margin: 100px 0;
+}
+@mixin flex-col{
+display: flex;
+flex-direction: column;
+}
+@mixin subtext {
+    font-family:$monserat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $body-text;
+}
+@mixin h2{
+    font-family:$monserat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color:$title;
+}
+@mixin title {
+    font-family: $monserat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $title;
+}
