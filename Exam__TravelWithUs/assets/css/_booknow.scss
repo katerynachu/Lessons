@@ -2,6 +2,10 @@
     background-image: url(../img/render-14.png);
     background-position: center;
     background-repeat: no-repeat;
+    
+    @media screen and(min-width:1920px) {
+        background-size: 100%;
+         }
 
     &__container{
         @include container;
@@ -11,16 +15,35 @@
        .block{
         @include booknow-block;
        }
+       @media screen and(max-width:$tablet) {
+            
+        padding: 120px 0;
+               }
     }
     &__wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        @media screen and(max-width:$tablet) {
+            
+            -webkit-box-pack: center;
+            
+                -ms-flex-pack: center;
+            
+                    justify-content: center;
+                   }
     }
 }
 .booknow--second{
     background-image: url(../img/spain-18.png);
     background-repeat: no-repeat;
     &__wrapper{
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
     }
 }

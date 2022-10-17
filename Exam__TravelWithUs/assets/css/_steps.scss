@@ -1,9 +1,26 @@
 .steps {
     background-color: $dark-grey;
-    padding: 107px 0 60px 0;
+    padding: 112px 0 60px 0;
     background-image: url(../img/Line.png);
     background-repeat: no-repeat;
-    background-position: center 52px;
+    background-position: center 60px;
+
+    @media screen and(max-width:$desktop) {
+      padding: 127px 0 45px 0;
+      background-image: url(../img/Line-728.png);
+      background-position: center 74px;
+      }
+      @media screen and(max-width:$desktop-small) {
+        background-image: url(../img/Line-632.png);
+        background-position: center 84px;
+      }
+      @media screen and(max-width:960px) {
+        background-position: center 92px;
+      }
+      @media screen and(max-width:$tablet) {
+      background-image: none;
+      padding: 60px;
+        }
 
     &__container {
         @include container;
@@ -11,16 +28,46 @@
 
     &__wrapper {
         background-color: $dark-grey;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        gap: 24px;
-        align-items: center;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        @media screen and(max-width:$tablet) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          gap: 60px;
+              }
     }
 
     &__item {
-        max-width: 364px;
-        padding: 12px 73px 0 73px;
+        width: 32%;
+        padding: 7px 0 0 0;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
         text-align: center;
+
+        @media screen and(max-width:$desktop) {
+              width: 31.2%;
+            }
+            @media screen and(max-width:960px) {
+               padding:16px 0;
+              }
+              @media screen and(max-width:$tablet) {
+                width: 100%;
+                       }
+           
+    }
+    &__item--middle{
+      padding-left: 5px;
     }
 
     &__text {
@@ -31,6 +78,8 @@
         line-height: 40px;
         text-transform: capitalize;
         color: $white;
+
+       
 
     }
 

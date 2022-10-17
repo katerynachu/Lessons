@@ -8,7 +8,9 @@
     &__wrapper{
         text-align: center;
         @include flex-column;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         gap: 20px;
     }
     &__text{
@@ -24,13 +26,24 @@
     }
     &__social{
         max-width: 275px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
         gap:32px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    &__link{
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
     }
     &__svg{
         fill:$white;
+        -webkit-transition: fill 0.5s ease;
+        -o-transition: fill 0.5s ease;
         transition: fill 0.5s ease;
         &:hover{
             fill: $accent;

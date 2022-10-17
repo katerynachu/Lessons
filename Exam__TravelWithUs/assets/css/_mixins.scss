@@ -1,8 +1,18 @@
 @mixin container {
-    max-width: 1320px;
+    max-width: 69%;
     margin: 0 auto;
+
+    @media screen and(max-width:$desktop) {
+        max-width: 86.4%;
+    }
+
+    @media screen and(max-width:$desktop-small) {
+        max-width: 93.8%;
+    }
+   
 }
-@mixin flex-column{
+
+@mixin flex-column {
     display: flex;
     flex-direction: column;
 }
@@ -33,6 +43,7 @@
     text-transform: uppercase;
     color: $white;
 }
+
 @mixin logo-text {
     font-family: $Josefinsans;
     font-weight: 700;
@@ -41,7 +52,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $white;
-    
+
 }
 
 @mixin subtext {
@@ -68,8 +79,8 @@
     background-color: $accent;
     color: $white;
     border: 1px solid transparent;
-    transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, box-shadow 1s linear ;
-    
+    transition: border 0.5s ease, color 0.3s ease, background-color 0.7s ease, box-shadow 1s linear;
+
 }
 
 @mixin body-text {
@@ -78,7 +89,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2em;
-   
+
 }
 
 @mixin button-text {
@@ -96,7 +107,16 @@
     &__spain {
         background: rgba(35, 35, 35, 0.9);
         padding: 44px 32px;
-        max-width: 52%;
+        max-width: 49%;
+
+        @media screen and(max-width:$desktop-small) {
+            max-width: 57.2%;
+        }
+
+        @media screen and(max-width:$tablet) {
+
+            max-width: 100%;
+        }
     }
 
     &__text {
@@ -127,18 +147,24 @@
         @include btn;
         @include button-text;
         padding: 19px 55px;
-        &:hover{
+        background-image: url(../img/Rectangle\ 8.png);
+        background-repeat: no-repeat;
+
+        &:hover {
             @include btn-hover;
         }
-        &:active{
+
+        &:active {
             background-color: #2d4196;
+            background-image: none;
             box-shadow: 10px 5px 5px $white;
         }
     }
 }
+
 @mixin btn-hover {
     background-color: $white;
-    color: $accent;
-    box-shadow:60px -15px $accent;
+    color: $black;
+    box-shadow: 60px -15px $accent-darker;
     border: 1px solid $accent;
 }

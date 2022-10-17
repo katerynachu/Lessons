@@ -1,12 +1,20 @@
 .header {
     background-image: url(../img/HeaderBackground.png);
     background-repeat: no-repeat;
-    text-align: center;
-    padding: 295px 0 160px 0;
+    text-align: center;;
+    padding: 295px 0 120px 0;
+
+    @media screen and(min-width:1920px) {
+        background-size: 100%;
+         }
 
     &__container {
         max-width: 647px;
         margin: 0 auto;
+
+        @media screen and(max-width:$mobile) {
+            max-width: 540px;
+        }
     }
 
     &__title {
@@ -29,6 +37,30 @@
         padding: 21px 0 21px 36px;
         margin-bottom: 211px;
 
+        @media screen and(max-width:$mobile) {
+            max-width: 93.8%;
+        }
+
+        &::-webkit-input-placeholder {
+            @include body-text;
+            color: $text-grey;
+        }
+
+        &::-moz-placeholder {
+            @include body-text;
+            color: $text-grey;
+        }
+
+        &:-ms-input-placeholder {
+            @include body-text;
+            color: $text-grey;
+        }
+
+        &::-ms-input-placeholder {
+            @include body-text;
+            color: $text-grey;
+        }
+
         &::placeholder {
             @include body-text;
             color: $text-grey;
@@ -50,8 +82,12 @@
     }
 
     &__button {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 12px;
         padding: 16px 24px;
         @include btn;
@@ -69,9 +105,16 @@
     }
 
     &__scrolldown {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         cursor: pointer;
         gap: 4px;
 
@@ -89,6 +132,8 @@
     &__scroll-text {
         @include body-text;
         color: $white;
+        -webkit-transition:color 0.7s ease;
+        -o-transition:color 0.7s ease;
         transition:color 0.7s ease;
         
        
@@ -97,6 +142,8 @@
 
     &__scroll-link {
         fill: $white;
+        -webkit-transition:fill 0.5s ease;
+        -o-transition:fill 0.5s ease;
         transition:fill 0.5s ease;
        
         

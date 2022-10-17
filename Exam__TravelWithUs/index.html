@@ -5,15 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <meta name="description" content="Discover amazing ☀ holidays to top destinations for 2022/ 2023. ✈ Click here to find & book your dream holiday with Thomas Cook.">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Travel With Us</title>
+   
 </head>
 
 <body class="body">
@@ -24,7 +44,7 @@
                 <p class="header__subtext ">Safe Travel Anywhere</p>
             </div>
             <form class="header__search">
-                <input class="header__input" name="search" id="header-search" type="search"
+                <input class="header__input" name="search" id="header-search" maxlength="50" type="search"
                     placeholder="Search Your Travel Destination">
                 <label class="header__label" for="header-search">
                     <button class="header__button" type="button">
@@ -35,28 +55,33 @@
                     </button>
                 </label>
             </form>
-            <div class="header__scrolldown">
-                <p class="header__scroll-text">Scroll Down</p>
-                <a class="header__scroll-link" href="#footer-down"><svg class="header__scroll-link animate__animated animate__fadeOutDown animate__infinite " width="14"
-                        height="10">
-                        <use xlink:href="assets/img/sprite.svg#chevron-down"></use>
-                    </svg></a>
-            </div>
+            <a href="#scroll-navigation" class="header__scrolldown header__scroll-link">
+                <span class="header__scroll-text">Scroll Down</span>
+                <svg class="header__scroll-link animate__animated animate__fadeOutDown animate__infinite " width="14"
+                    height="16">
+                    <use xlink:href="assets/img/sprite.svg#chevron-down"></use>
+                </svg>
+            </a>
         </div>
     </header>
     <main class="main">
-        <section class="main__navigation navigation">
+        <section id="scroll-navigation" class="main__navigation navigation">
             <div class="navigation__container">
                 <div class="navigation__wrapper">
                     <h3 class="navigation__logo">
                         Bhromaon
                     </h3>
+                    <input class="navigation__burger-input" type="checkbox" id="navigation-burger">
+                    <label class="navigation__burger-label" for="navigation-burger">
+                        <span class="navigation__burger"></span>
+                    </label>
                     <div class="navigation__menu">
                         <a class="navigation__item" href="#">Who We Are</a>
                         <a class="navigation__item" href="#">What We Do</a>
                         <a class="navigation__item" href="#">Travel With Us</a>
                         <a class="navigation__item" href="#">Contact Us</a>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -71,14 +96,25 @@
                             <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
                                 so blinded by desire, that.</p>
                         </div>
-                        <button class="why__button" type="button">Explore Places </button>
+                        <button class="why__button" type="button">
+                            Explore Places </button>
                     </div>
                     <div class="why__picture">
                         <div class="why__image">
-                            <img class="why__img" src="assets/img/why-image 1.png" alt="">
+                            <picture>
+                                <source width="258" height="162" srcset="assets/img/why-Image1-256.png" type="image/png"
+                                    media="(max-width: 576px)">
+                                <img width="350" height="220" class="why__img" src="assets/img/why-image 1.png"
+                                    alt="picture-nature">
+                            </picture>
                         </div>
-                        <div class="why__image">
-                            <img class="why__img--right" src="assets/img/why-image 2.png" alt="">
+                        <div class="why__image why__image--right">
+                            <picture>
+                                <source width="258" height="162" srcset="assets/img/why-Image2-256png.png"
+                                    type="image/png" media="(max-width: 576px)">
+                                <img width="350" height="220" class="why__img--right" src="assets/img/why-image 2.png"
+                                    alt="picture-nature">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -93,7 +129,7 @@
                         </svg>
                         <h2 class="steps__text">Search Places</h2>
                     </div>
-                    <div class="steps__item">
+                    <div class="steps__item steps__item--middle">
                         <svg class="steps__svg steps__svg--red" width="64px" height="64px">
                             <use xlink:href="assets/img/sprite.svg#check-circle"></use>
                         </svg>
@@ -154,7 +190,17 @@
                     <h2 class="review__h2">What Our Tourists Say</h2>
                     <div class="review__block">
                         <div class="review__photo">
-                            <img src="assets/img/ReviewPhoto.png" alt="">
+                            <picture>
+                                <source width="540" height="336" srcset="assets/img/ReviewPhoto-540.png"
+                                    type="image/png" media="(max-width: 576px)">
+                                <source width="720" height="336" srcset="assets/img/ReviewPhoto-720.png"
+                                    type="image/png" media="(max-width: 768px)">
+                                <source width="320" height="336" srcset="assets/img/ReviewPhoto-320.png"
+                                    type="image/png" media="(max-width: 1024px)">
+                                <source width="380" height="308" srcset="assets/img/ReviewPhoto-380.png"
+                                    type="image/png" media="(max-width: 1360px)">
+                                <img width="440" height="280" src="assets/img/ReviewPhoto.png" alt="review-photo">
+                            </picture>
                         </div>
                         <div class="review__text">
                             <h5 class="review__h5">Sam Sumon</h5>
@@ -183,24 +229,24 @@
                     <p class="footer__subtext">Safe Travel Anywhere</p>
                 </div>
                 <div class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank"> <svg width="20px" height="32px"
-                            class="footer__svg-facebook footer__svg">
+                    <a class="footer__link" href="https://www.facebook.com/" target="_blank"> <svg width="20px"
+                            height="32px" class="footer__svg-facebook footer__svg">
                             <use xlink:href="assets/img/sprite.svg#facebook"></use>
                         </svg></a>
-                    <a href="https://twitter.com/" target="_blank"><svg width="32px" height="32px"
+                    <a class="footer__link" href="https://twitter.com/" target="_blank"><svg width="32px" height="32px"
                             class="footer__svg-twitter footer__svg">
                             <use xlink:href="assets/img/sprite.svg#twitter"></use>
                         </svg></a>
-                    <a href="https://uk.linkedin.com/" target="_blank"> <svg width="28px" height="32px"
-                            class="footer__svg-linkedin footer__svg">
+                    <a class="footer__link" href="https://uk.linkedin.com/" target="_blank"> <svg width="28px"
+                            height="32px" class="footer__svg-linkedin footer__svg">
                             <use xlink:href="assets/img/sprite.svg#linkedin"></use>
                         </svg></a>
-                    <a href="https://www.youtube.com/" target="_blank"><svg width="36px" height="32px"
-                            class="footer__svg-youtube footer__svg">
+                    <a class="footer__link" href="https://www.youtube.com/" target="_blank"><svg width="36px"
+                            height="32px" class="footer__svg-youtube footer__svg">
                             <use xlink:href="assets/img/sprite.svg#youtube"></use>
                         </svg></a>
-                    <a href="https://www.pinterest.com/" target="_blank"><svg width="31px" height="32px"
-                            class="footer__svg-pinterest footer__svg">
+                    <a class="footer__link" href="https://www.pinterest.com/" target="_blank"><svg width="31px"
+                            height="32px" class="footer__svg-pinterest footer__svg">
                             <use xlink:href="assets/img/sprite.svg#pinterest"></use>
                         </svg></a>
                 </div>

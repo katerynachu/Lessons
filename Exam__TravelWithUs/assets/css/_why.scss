@@ -1,25 +1,60 @@
 .why {
     background-image: url(../img/WhyBackground.png);
     background-repeat: no-repeat;
-
+    background-position: center;
+    
+    @media screen and(min-width:1920px) {
+       background-size: 100%;
+        }
     &__container {
         @include container;
     }
 
     &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 124px 0;
+
+        @media screen and(max-width:$tablet) {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse;
+          gap: 32px;
+          padding: 60px 0;
+          }
+          @media screen and(max-width:$mobile) {
+           gap: 37px;
+        }
     }
 
     &__content {
-        max-width: 648px ;
+        max-width: 49%;
+
+        @media screen and(max-width:$desktop-small) {
+           max-width: 57%;
+          }
+          @media screen and(max-width:$tablet) {
+            max-width: 100%;
+            text-align: center;
+            }
+         
     }
 
     &__h2 {
         margin-bottom: 24px;
         @include h2;
+        @media screen and(max-width:$mobile) {
+           margin-bottom: 19px;
+         }
+      
     }
 
     &__subtext {
@@ -27,37 +62,85 @@
         gap: 28px;
         margin-bottom: 32px;
         @include subtext-grey;
+        @media screen and(max-width:$tablet) {
+           margin-bottom: 24px;
+            }
     }
 
     &__button {
         @include btn;
         @include button-text;
+        background-image: url(../img/Rectangle\ 8.png);
+        background-repeat: no-repeat;
         padding: 19px 31px;
         border: 1px solid transparent;
+        -webkit-transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, -webkit-box-shadow 1s linear;
+        transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, -webkit-box-shadow 1s linear;
+        -o-transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, box-shadow 1s linear;
         transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, box-shadow 1s linear;
+        transition: border 0.5s ease , color 0.3s ease , background-color 0.7s ease, box-shadow 1s linear , -webkit-box-shadow 1s linear;
         &:hover{
             @include btn-hover;
         }
         &:active{
             background-color: #2d4196;
-            box-shadow: 10px 5px 5px $white;
+            -webkit-box-shadow: 10px 5px 5px $white;
+                    box-shadow: 10px 5px 5px $white;
         }
     }
 
     &__picture {
-        max-width: 424px;
+        width: 40%;
        @include flex-column;
         gap: 16px;
-    }
 
+        @media screen and(max-width:$desktop) {
+            width: 40%;
+          }
+          @media screen and(max-width:$tablet) {
+            width: 100%;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            }
+    }
+&__image{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+&__image--right{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
     &__img {
-       max-width: 100%;
-        margin-right: 74px;
+       max-width:100%;
+        text-align: left;
+
+        // @media screen and(max-width:$desktop) {
+        //     margin-right: 24%;
+        //   }
+        //   @media screen and(max-width:$desktop-small) {
+        //     margin-right: 9%;
+        //   }
     }
 
     &__img--right {
         max-width: 100%;
-        margin-left: 74px;
+        text-align: right;
+
+        // @media screen and(max-width:$desktop) {
+        //     margin-left: 24%;
+        //   }
+        //   @media screen and(max-width:$desktop-small) {
+        //     margin-left: 9%;
+        //   }
     }
 
 }

@@ -3,6 +3,14 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 120px 0 180px 0;
+    @media screen and(min-width:1920px) {
+        background-size: 100%;
+         }
+
+    @media screen and(max-width:$tablet) {
+            
+        padding: 60px 0 120px 0;
+               }
 
     &__container {
         @include container;
@@ -17,7 +25,15 @@
         @include h2;
     }
     &__block{
-        display: flex
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @media screen and(max-width:$tablet) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+                   }
     }
     &__text{
         background-color: $dark-grey;
