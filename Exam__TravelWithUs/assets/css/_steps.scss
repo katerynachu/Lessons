@@ -4,18 +4,22 @@
     background-image: url(../img/Line.png);
     background-repeat: no-repeat;
     background-position: center 60px;
+    background-size: 47%;
+
 
     @media screen and(max-width:$desktop) {
       padding: 127px 0 45px 0;
       background-image: url(../img/Line-728.png);
-      background-position: center 74px;
+      background-position: center 83px;
+      background-size: 55%;
       }
       @media screen and(max-width:$desktop-small) {
         background-image: url(../img/Line-632.png);
-        background-position: center 84px;
+        background-position: center 86px;
+        background-size: 64%;
       }
       @media screen and(max-width:960px) {
-        background-position: center 92px;
+        background-position: center 89px;
       }
       @media screen and(max-width:$tablet) {
       background-image: none;

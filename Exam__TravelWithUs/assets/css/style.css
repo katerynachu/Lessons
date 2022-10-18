@@ -136,13 +136,15 @@
   transition: color 0.7s ease;
 }
 .header__scroll-link {
+  text-decoration: none;
   fill: #FFFFFF;
   transition: fill 0.5s ease;
 }
 
 .navigation {
   background-color: #5373FD;
-  padding: 32px 0;
+  padding: 28px 0;
+  position: relative;
 }
 .navigation__container {
   max-width: 69%;
@@ -150,7 +152,7 @@
 }
 @media screen and (max-width: 1360px) {
   .navigation__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -193,7 +195,7 @@
   .navigation__menu {
     display: none;
     position: absolute;
-    top: 84%;
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #5373FD;
@@ -280,7 +282,7 @@
 }
 @media screen and (max-width: 1360px) {
   .why__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -418,23 +420,26 @@
   background-image: url(../img/Line.png);
   background-repeat: no-repeat;
   background-position: center 60px;
+  background-size: 47%;
 }
 @media screen and (max-width: 1360px) {
   .steps {
     padding: 127px 0 45px 0;
     background-image: url(../img/Line-728.png);
-    background-position: center 74px;
+    background-position: center 83px;
+    background-size: 55%;
   }
 }
 @media screen and (max-width: 1024px) {
   .steps {
     background-image: url(../img/Line-632.png);
-    background-position: center 84px;
+    background-position: center 86px;
+    background-size: 64%;
   }
 }
 @media screen and (max-width: 960px) {
   .steps {
-    background-position: center 92px;
+    background-position: center 89px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -449,7 +454,7 @@
 }
 @media screen and (max-width: 1360px) {
   .steps__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -528,7 +533,7 @@
 }
 @media screen and (max-width: 1360px) {
   .booknow__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -656,7 +661,7 @@
 }
 @media screen and (max-width: 1360px) {
   .review__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -668,6 +673,16 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+.review__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .review__img {
+    width: 100%;
+  }
 }
 .review__h2 {
   text-align: center;
@@ -724,7 +739,7 @@
 }
 @media screen and (max-width: 1360px) {
   .footer__container {
-    max-width: 86.4%;
+    max-width: 83.9%;
   }
 }
 @media screen and (max-width: 1024px) {

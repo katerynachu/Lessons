@@ -1,6 +1,7 @@
 .navigation {
     background-color: $accent;
-    padding: 32px 0;
+    padding: 28px 0;
+    position: relative;
 
     &__container {
         @include container;
@@ -50,7 +51,7 @@
         @media screen and(max-width:$mobile) {
             display: none;
             position: absolute;
-            top: 84%;
+            top: 100%;
             left: 0;
             right: 0;
             background-color: $accent;
