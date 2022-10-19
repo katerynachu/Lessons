@@ -47,14 +47,8 @@
 }
 .header__input {
   border: unset;
-  width: 617px;
-  padding: 21px 0 21px 36px;
-  margin-bottom: 211px;
-}
-@media screen and (max-width: 576px) {
-  .header__input {
-    max-width: 93.8%;
-  }
+  width: 94%;
+  padding: 16px 0 16px 31px;
 }
 .header__input::-moz-placeholder {
   font-family: "Josefin Sans", sans-serif;
@@ -81,12 +75,25 @@
   color: #999999;
 }
 .header__search {
-  position: relative;
+  width: 647px;
+  margin-bottom: 211px;
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 4px 5px;
 }
-.header__label {
-  position: absolute;
-  right: -1px;
-  top: 4px;
+@media screen and (max-width: 768px) {
+  .header__search {
+    width: 94%;
+    margin: 0 auto 211px auto;
+  }
+}
+@media screen and (max-width: 498px) {
+  .header__search {
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .header__svg-search {
   fill: #FFFFFF;
@@ -112,6 +119,12 @@
 }
 .header__button:hover {
   background-color: #2d4196;
+}
+@media screen and (max-width: 498px) {
+  .header__button {
+    max-width: 139px;
+    margin: 0 auto;
+  }
 }
 .header__scrolldown {
   display: inline-flex;
@@ -165,7 +178,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
   .navigation__wrapper {
     flex-direction: column;
     gap: 12px;
@@ -174,7 +187,7 @@
 @media screen and (max-width: 576px) {
   .navigation__wrapper {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 146px;
   }
 }
@@ -191,16 +204,26 @@
   display: flex;
   gap: 40px;
 }
+@media screen and (max-width: 768px) {
+  .navigation__menu {
+    gap: 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .navigation__menu {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 0;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
+    opacity: 0;
     background-color: #5373FD;
     transform: translateX(-100%);
-    transition: all 0.3s linear;
+    transition: opacity 0.3s linear;
   }
 }
 .navigation__burger {
@@ -245,12 +268,13 @@
   transform: rotate(-45deg);
 }
 .navigation__burger-input:checked ~ .navigation__menu {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 32px 0;
-  flex-direction: column;
+  opacity: 1;
   transform: translateX(0);
+}
+.navigation__burger-label {
+  position: absolute;
+  top: 30px;
+  right: 17px;
 }
 .navigation__item {
   text-decoration: none;

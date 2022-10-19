@@ -1,12 +1,13 @@
 .header {
     background-image: url(../img/HeaderBackground.png);
     background-repeat: no-repeat;
-    text-align: center;;
+    text-align: center;
+    ;
     padding: 295px 0 120px 0;
 
     @media screen and(min-width:1920px) {
         background-size: 100%;
-         }
+    }
 
     &__container {
         max-width: 647px;
@@ -33,14 +34,9 @@
 
     &__input {
         border: unset;
-        width: 617px;
-        padding: 21px 0 21px 36px;
-        margin-bottom: 211px;
-        @media screen and(max-width:$mobile) {
-            max-width: 93.8%;
-        }
+        width: 94%;
+        padding: 16px 0 16px 31px;
 
-      
 
         &::-webkit-input-placeholder {
             @include body-text;
@@ -69,15 +65,28 @@
     }
 
     &__search {
-        position: relative;
-       
+        width: 647px;
+        margin-bottom: 211px;
+        display: flex;
+        background-color: $white;
+        padding: 4px 5px;
+
+        @media screen and(max-width:$tablet) {
+            width: 94%;
+            margin: 0 auto 211px auto;
+        }
+
+        @media screen and(max-width:498px) {
+            display: flex;
+            background: transparent;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+
     }
 
-    &__label {
-        position: absolute;
-        right: -1px;
-        top: 4px;
-    }
 
     &__svg-search {
         fill: $white;
@@ -88,8 +97,8 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         gap: 12px;
         padding: 16px 24px;
         @include btn;
@@ -97,8 +106,13 @@
         font-size: 14px;
         letter-spacing: 0.1em;
 
-        &:hover{
+        &:hover {
             background-color: #2d4196;
+        }
+
+        @media screen and(max-width:498px) {
+            max-width: 139px;
+            margin: 0 auto;
         }
 
 
@@ -112,19 +126,20 @@
         display: inline-flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         cursor: pointer;
         gap: 4px;
 
-        &:hover{
-            & .header__scroll-text{
+        &:hover {
+            & .header__scroll-text {
                 color: $accent;
             }
-            & .header__scroll-link{
+
+            & .header__scroll-link {
                 fill: $accent;
             }
         }
@@ -134,22 +149,22 @@
     &__scroll-text {
         @include body-text;
         color: $white;
-        -webkit-transition:color 0.7s ease;
-        -o-transition:color 0.7s ease;
-        transition:color 0.7s ease;
-        
-       
-       
+        -webkit-transition: color 0.7s ease;
+        -o-transition: color 0.7s ease;
+        transition: color 0.7s ease;
+
+
+
     }
 
     &__scroll-link {
         text-decoration: none;
         fill: $white;
-        -webkit-transition:fill 0.5s ease;
-        -o-transition:fill 0.5s ease;
-        transition:fill 0.5s ease;
-       
-        
+        -webkit-transition: fill 0.5s ease;
+        -o-transition: fill 0.5s ease;
+        transition: fill 0.5s ease;
+
+
 
     }
 }
