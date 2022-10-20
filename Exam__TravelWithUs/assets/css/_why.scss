@@ -20,7 +20,11 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 124px 0;
+        padding: 124px 112px 124px 0;
+
+        @media screen and(max-width:$desktop) {
+            padding: 124px 0;
+          }
 
         @media screen and(max-width:$tablet) {
           -webkit-box-orient: vertical;
@@ -90,7 +94,7 @@
     }
 
     &__picture {
-        width: 40%;
+        width: 35%;
        @include flex-column;
         gap: 16px;
 
@@ -123,24 +127,12 @@
        max-width:100%;
         text-align: left;
 
-        // @media screen and(max-width:$desktop) {
-        //     margin-right: 24%;
-        //   }
-        //   @media screen and(max-width:$desktop-small) {
-        //     margin-right: 9%;
-        //   }
     }
 
     &__img--right {
         max-width: 100%;
         text-align: right;
 
-        // @media screen and(max-width:$desktop) {
-        //     margin-left: 24%;
-        //   }
-        //   @media screen and(max-width:$desktop-small) {
-        //     margin-left: 9%;
-        //   }
     }
 
 }
