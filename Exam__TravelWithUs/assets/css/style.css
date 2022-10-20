@@ -6,7 +6,7 @@
 }
 
 .header {
-  background-image: url(../img/HeaderBackground.png);
+  background-image: url(../img/HeaderBackground_1.webp);
   background-repeat: no-repeat;
   text-align: center;
   padding: 295px 0 120px 0;
@@ -291,7 +291,7 @@
 }
 
 .why {
-  background-image: url(../img/WhyBackground.png);
+  background-image: url(../img/WhyBackground.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -441,7 +441,7 @@
 .steps {
   background-color: #333333;
   padding: 112px 0 60px 0;
-  background-image: url(../img/Line.png);
+  background-image: url(../img/Line.webp);
   background-repeat: no-repeat;
   background-position: center 60px;
   background-size: 47%;
@@ -449,14 +449,14 @@
 @media screen and (max-width: 1360px) {
   .steps {
     padding: 127px 0 45px 0;
-    background-image: url(../img/Line-728.png);
+    background-image: url(../img/Line-728.webp);
     background-position: center 83px;
     background-size: 55%;
   }
 }
 @media screen and (max-width: 1024px) {
   .steps {
-    background-image: url(../img/Line-632.png);
+    background-image: url(../img/Line-632.webp);
     background-position: center 86px;
     background-size: 64%;
   }
@@ -542,7 +542,7 @@
 }
 
 .booknow {
-  background-image: url(../img/render-14.png);
+  background-image: url(../img/render-14.webp);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -656,7 +656,7 @@
 }
 
 .booknow--second {
-  background-image: url(../img/spain-18.png);
+  background-image: url(../img/spain-18.webp);
   background-repeat: no-repeat;
 }
 .booknow--second__wrapper {
@@ -664,7 +664,7 @@
 }
 
 .review {
-  background-image: url(../img/BG.png);
+  background-image: url(../img/BG.webp);
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0 180px 0;
