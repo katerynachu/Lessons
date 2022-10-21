@@ -1,6 +1,7 @@
 .header {
-    background-image: url(../img/HeaderBackground_1.webp);
+    background-image: url(../img/HeaderBackground.webp);
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     ;
     padding: 295px 0 120px 0;
@@ -8,6 +9,7 @@
     @media screen and(min-width:1920px) {
         background-size: 100%;
     }
+   
 
     &__container {
         max-width: 647px;
