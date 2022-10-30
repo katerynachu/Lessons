@@ -22,7 +22,7 @@ alert(`Perimetr your square ${perimetrSquare}` )
 
 // task4
 
-let radiusCircle = prompt ('Please,enter the details of the circle radius');
+let radiusCircle = prompt ('Please,enter the details of the circle radius')
 let squareCircle = (3.14* `${radiusCircle}`**2)
 console.log(squareCircle)
 alert(`Square your circle ${squareCircle}` )
