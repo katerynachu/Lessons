@@ -76,4 +76,3 @@ alert(resultNumber.reverse().join(''));
 }
 
 
-
