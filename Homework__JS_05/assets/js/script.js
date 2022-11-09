@@ -28,8 +28,10 @@ let car ={
         return alert("Name " + this.driver + " change to " + a );
        }
     };
-    let newName = prompt('Enter new name for driver')
+    let newName = prompt('Enter new name for driver');
     car.newDriver(newName);
+    car.driver = newName; 
+    console.log(car)
 
     // Метод для перевірки імені водія
     car.checkName = function(){
