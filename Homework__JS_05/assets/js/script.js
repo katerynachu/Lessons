@@ -31,7 +31,6 @@ let car ={
     let newName = prompt('Enter new name for driver');
     car.newDriver(newName);
     car.driver = newName; 
-    console.log(car)
 
     // Метод для перевірки імені водія
     car.checkName = function(){
