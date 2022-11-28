@@ -1,0 +1,110 @@
+@mixin container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@mixin title {
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: $main;
+}
+@mixin h1 {
+    font-family:$monserat;
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 98px;
+letter-spacing: 0.1em;
+color: $white;
+}
+@mixin devider-black {
+    &:before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: $main;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+@mixin devider-white {
+    &:before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: $white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+@mixin  subtitle {
+    font-family:$monserat;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+color: $main;
+text-transform:uppercase;
+}
+@mixin  description {
+    font-family:$openSans;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: $main;
+}
+@mixin btn {
+    padding:16px 41px;
+    background-color: $white;
+    font-family:$monserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid $main;
+}
+@mixin title-article {
+font-family:$monserat;
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 27px;
+color: $main;
+text-transform: uppercase;
+}
+@mixin description-article {
+    font-family: $openSans;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: $main;
+}
+@mixin author-name{
+    font-family:$monserat;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: $main;
+text-transform: uppercase;
+}
+@mixin author-date {
+    font-family: $monserat;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: $blue;
+}

@@ -1,0 +1,61 @@
+.gallery{
+    padding: 150px 0;
+
+    &__container{
+        @include container;
+    }
+    &__h2{
+        @include title;
+        text-align: center;
+        margin-bottom: 90px;
+        @include devider-black;
+    }
+    &__grid{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(4fr);
+        grid-template-rows: repeat(2fr);
+        gap: 10px;
+        .grid{
+            &__item--1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            &__item--2{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            &__item--3{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 2;
+            }
+            &__item--4{
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            &__item--5{
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+        }
+      
+    }
+    &__button{
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+    }
+    &__btn{
+        @include btn;
+    }
+}

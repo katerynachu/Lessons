@@ -1,0 +1,233 @@
+.main-section {
+    &__container {
+        @include container;
+    }
+
+    &__slider {
+        z-index: 0;
+        margin: 82px 0;
+        padding: 154px 200px;
+        background-image: url(../images/photo.png);
+        background-repeat: no-repeat;
+        position: relative;
+
+        &::before {
+            content: '';
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            background: rgba(41, 45, 62, 0.8);
+        }
+
+        .slider {
+            &__item {
+                z-index: 2;
+
+            }
+        }
+    }
+
+}
+
+.card {
+    &__tabs {
+        background-color: $dark-blue;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tabs-item {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $inactive;
+    }
+
+    &__body {
+        padding: 60px 40px;
+        display: flex;
+        gap: 41px;
+        //   align-items: center;
+        background-color: $deep-blue;
+    }
+
+    &__picInfo {
+        padding: 18.5px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__textInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .description {
+            &__bott {
+                font-size: 14px;
+                line-height: 22px;
+                color: $grey;
+            }
+        }
+    }
+
+    &__description-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__h2 {
+        font-size: 32px;
+        line-height: 32px;
+        color: $white;
+    }
+
+    &__subtext {
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+    }
+
+//     &__score {
+//         padding: 26px 25px;
+//         position: relative;
+//         border: 2px solid $grey;
+//         border-radius: 50px;
+//         position: absolute;
+//         clip: rect(0px, 75px, 100px, 0px);
+//         position: relative;
+//         font-size: 20px;
+//         line-height: 22px;
+//         color: $grey;
+
+//         &::after {
+//             width: 75px;
+//             height: 75px;
+//             border-radius: 50%;
+//             content: '';
+//             position: absolute;
+//             right: -3px;
+//             top: -4px;
+//             border: 4px solid $light-green;
+// stroke-dashoffset: 6;
+//         }
+
+//     }
+
+    &__toBuy {
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__sale {
+        font-size: 12px;
+        line-height: 20px;
+        color: $yellow;
+    }
+
+    &__priceNow {
+        font-size: 32px;
+        line-height: 32px;
+        color: $white;
+    }
+
+    &__btn {
+        cursor: pointer;
+        padding: 20px 30px;
+        font-size: 16px;
+        line-height: 20px;
+        background: $light-green;
+        border-radius: 2px;
+        border: unset;
+        text-transform: uppercase;
+        color: $white;
+        transition: all 0.5s linear;
+        &:hover{
+            background-color: $white;
+            color: $light-green;
+        }
+    }
+
+}
+.slick-next{
+  right: -75px;
+  &::before{
+  color: $light-green;
+  font-size: 35px;
+  }
+}
+.slick-prev{
+    left: -75px;
+    &::before{
+        color: $light-green;
+        font-size: 35px;
+        }
+}
+.slick-dots{
+    bottom: -65px;
+}
+.slick-dots li button:before{
+    font-size: 16px;
+    color: $light-green;
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color:$light-green;
+}
+
+.card__score{
+    position: relative;
+    .score{
+        &__progress-circle{
+          position: absolute;
+          top: -1px;
+        }
+        &__text{
+            right:30%;
+            top: 30%;
+            position: absolute;
+            font-size: 20px;
+            line-height: 22px;
+            color: #B7BACD;
+        }
+    }
+}

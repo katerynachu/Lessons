@@ -1,0 +1,106 @@
+.projects {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    &__container {
+        @include container;
+    }
+
+    &__h2 {
+        @include title;
+        text-align: center;
+        margin-bottom: 90px;
+        @include devider-black;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    &__fist,
+    &__second {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        align-items: flex-end;
+    }
+    &__second{
+        margin-top: 0;
+    }
+
+    &__images {
+        .images {
+            &__item {
+                z-index: 1;
+                position: relative;
+            }
+
+            &__block {
+                width: 585px;
+                height: 470px;
+                z-index: 0;
+                position: absolute;
+            }
+
+            &__block--left {
+                top: 215px;
+                left: 0;
+                background-color: $blue;
+
+            }
+
+            &__block--right {
+                top:870px;
+                right: 0;
+                background-color: $purple;
+
+            }
+        }
+    }
+
+    &__content {
+        padding-top: 94px;
+        padding-bottom: 26px;
+    }
+
+    &__subtitle {
+        @include subtitle;
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 19px;
+    }
+
+    &__description {
+        @include description;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        @include btn;
+        margin-bottom: 60px;
+    }
+
+    &__location {
+        display: flex;
+        gap: 10px;
+
+        .location {
+            &__text {
+                font-family: $openSans;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: $black;
+            }
+        }
+    }
+
+
+}
