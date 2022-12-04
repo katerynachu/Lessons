@@ -5,6 +5,39 @@
 
     &__container {
         @include container;
+
+        @media only screen and (max-width: 1400px) {
+            max-width: 1010px;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            max-width: 830px;
+        }
+
+        @include tablet {
+            max-width: 520px;
+        }
+
+        @media only screen and (max-width: 670px) {
+            transform: translateX(0);
+        }
+
+        @media only screen and (max-width: 600px) {
+            max-width: 430px;
+        }
+
+        @include phone {
+            max-width: 410px;
+            padding: 0 20px;
+        }
+
+        @media only screen and (max-width: 420px) {
+            max-width: 360px;
+        }
+
+        @media only screen and (max-width: 380px) {
+            max-width: 320px;
+        }
     }
 
     &__h2 {
@@ -12,9 +45,13 @@
         text-align: center;
         margin-bottom: 90px;
         @include devider-black;
+        @include desktop {
+            margin-bottom: 40px;
+        }
     }
 
     &__wrapper {
+        // position: relative;
         display: flex;
         flex-direction: column;
         gap: 120px;
@@ -27,44 +64,90 @@
         justify-content: space-between;
         gap: 70px;
         align-items: flex-end;
+
+        @include desktop {
+            gap: 50px;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            width: 100%;
+        }
     }
-    &__second{
+
+    &__second {
         margin-top: 0;
+        @include tablet {
+           flex-direction: column-reverse;
+        }
+
     }
 
     &__images {
+        width: 100%;
+        height: auto;
+
+
+
+        &::after {
+            content: '';
+            width: 585px;
+            height: 470px;
+            position: absolute;
+
+        }
+
         .images {
+
             &__item {
+
                 z-index: 1;
                 position: relative;
-            }
-
-            &__block {
-                width: 585px;
-                height: 470px;
-                z-index: 0;
-                position: absolute;
-            }
-
-            &__block--left {
-                top: 215px;
-                left: 0;
-                background-color: $blue;
 
             }
+        }
 
-            &__block--right {
-                top:870px;
-                right: 0;
-                background-color: $purple;
+    }
 
+    &__images--left {
+        &::after {
+            top: 215px;
+            left: 0;
+            background-color: $blue;
+
+            @include desktop-xl {
+                top: 296px;
+            }
+            @include tablet {
+             top: 136px;
+             left: 90px;
             }
         }
     }
 
+    &__images--right {
+        &::after {
+            top: 870px;
+            right: 0;
+            background-color: $purple;
+
+            @include desktop-xl {
+                top: 965px;
+            }
+            @include tablet {
+                top: 1173px;
+                right: 90px;
+             }
+        }
+    }
+
+
     &__content {
         padding-top: 94px;
         padding-bottom: 26px;
+        @include desktop {
+          padding-top: 24px;
+           }
     }
 
     &__subtitle {

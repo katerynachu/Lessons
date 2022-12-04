@@ -6,6 +6,18 @@
 
     &__container {
         @include container;
+        @media only screen and (max-width: 1400px) {
+            max-width: 1010px;
+        }
+
+        @media only screen and (max-width: 1150px) {
+            max-width: 830px;
+        }
+
+        @include tablet {
+            max-width: 675px;
+        }
+
     }
 
     &__h2 {
@@ -24,6 +36,10 @@
         .slider {
             &__item+.slider__item {
                 margin-left: 30px;
+
+                @media only screen and (max-width: 1400px) {
+                    margin-left: 100px;
+                }
             }
 
             &__img {
@@ -41,6 +57,29 @@
                 height: 515px;
                 width: 370px;
                 background-color: $white;
+                @media only screen and (max-width: 1400px) {
+                    width: 420px;
+                 }
+             
+                 @media only screen and (max-width: 1200px) {
+                     max-width: 330px;
+                 }
+             
+                //  @include tablet {
+                //      max-width: 460px;
+                //  }
+             
+                 @media only screen and (max-width: 600px) {
+                     max-width: 370px;
+                 }
+             
+                 @media only screen and (max-width: 420px) {
+                     max-width: 320px;
+                 }
+             
+                 @media only screen and (max-width: 380px) {
+                     max-width: 280px;
+                 }
 
             }
 
@@ -104,10 +143,22 @@
 
 .slick-prev {
     left: -85px;
+    @media only screen and (max-width: 670px) {
+        left: -59px;
+    }
+    @media only screen and (max-width: 550px) {
+        display: none ;
+    }
 }
 
 .slick-next {
     right: -40px;
+    @media only screen and (max-width: 670px) {
+        right: -59px;
+    }
+    @media only screen and (max-width: 550px) {
+        display: none;
+    }
 }
 .slick-dots{
   bottom: -65px;

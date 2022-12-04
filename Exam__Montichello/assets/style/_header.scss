@@ -1,5 +1,4 @@
 .header {
-    z-index: 1;
     position: relative;
 
     &__wrapper {
@@ -12,13 +11,39 @@
     &__nav {
         display: flex;
         gap: 70px;
-  
+
+
+        @include tablet {
+            visibility: hidden;
+            z-index: 1;
+            min-width: 100%;
+            min-height: 100%;
+            position: fixed;
+            top: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            text-align: center;
+            padding-top: 20px;
+            transition: opacity 0.7s linear;
+
+            &.overlay {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                visibility: visible;
+                opacity: 1;
+                padding-top: 250px;
+                background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+            }
+        }
+
 
         .nav {
             &__link {
                 cursor: pointer;
                 display: flex;
-           
+
                 align-items: center;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -28,7 +53,9 @@
                 font-size: 14px;
                 line-height: 18px;
                 color: $white;
-
+                @include tablet{
+                  font-size: 18px;
+                }
 
                 &::before {
                     content: "";
@@ -38,6 +65,9 @@
                     border-radius: 50%;
                     border: 1px solid #FFFFFF;
                     transition: background-color 0.5s ease;
+                    @include tablet{
+                        opacity: 0;
+                    }
                 }
 
                 &:active::before {
@@ -46,36 +76,36 @@
             }
         }
     }
+}
 
-    &__social {
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &__item {
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        border-radius: 50%;
+        border: 1px solid #FFFFFF;
+        transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
 
-        .social {
-            &__item {
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                border: 1px solid #FFFFFF;
-                transition: border 1s linear,fill 0.5s ease,background-color 1s linear;
-
-                &:hover{
-                    background-color: #FFFFFF;
-                    border: 1px solid $purple;
-                }
-                &:hover .social__icon{
-                  fill: $purple;
-                }
-            }
-            &__icon{
-                fill:$white;
-            }
+        &:hover {
+            background-color: #FFFFFF;
+            border: 1px solid $purple;
         }
-      
+
+        &:hover .social__icon {
+            fill: $purple;
+        }
     }
+
+    &__icon {
+        fill: $white;
+    }
+
 }

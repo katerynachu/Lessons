@@ -3,6 +3,11 @@
     max-width: 1170px;
 }
 
+@mixin footer-container {
+    margin: 0 auto;
+    max-width: 770px;
+}
+
 @mixin title {
     font-family: $monserat;
     font-style: normal;
@@ -12,15 +17,17 @@
     text-transform: uppercase;
     color: $main;
 }
+
 @mixin h1 {
-    font-family:$monserat;
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-line-height: 98px;
-letter-spacing: 0.1em;
-color: $white;
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: $white;
 }
+
 @mixin devider-black {
     &:before {
         content: '';
@@ -33,6 +40,7 @@ color: $white;
         margin-bottom: 30px;
     }
 }
+
 @mixin devider-white {
     &:before {
         content: '';
@@ -45,27 +53,30 @@ color: $white;
         margin-bottom: 30px;
     }
 }
-@mixin  subtitle {
-    font-family:$monserat;
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 27px;
-color: $main;
-text-transform:uppercase;
+
+@mixin subtitle {
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: $main;
+    text-transform: uppercase;
 }
-@mixin  description {
-    font-family:$openSans;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-color: $main;
+
+@mixin description {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $main;
 }
+
 @mixin btn {
-    padding:16px 41px;
+    padding: 16px 41px;
     background-color: $white;
-    font-family:$monserat;
+    font-family: $monserat;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -74,37 +85,67 @@ color: $main;
     color: black;
     border: 1px solid $main;
 }
+
 @mixin title-article {
-font-family:$monserat;
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 27px;
-color: $main;
-text-transform: uppercase;
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $main;
+    text-transform: uppercase;
 }
+
 @mixin description-article {
     font-family: $openSans;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: $main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $main;
 }
-@mixin author-name{
-    font-family:$monserat;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-color: $main;
-text-transform: uppercase;
+
+@mixin author-name {
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main;
+    text-transform: uppercase;
 }
+
 @mixin author-date {
     font-family: $monserat;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: $blue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $blue;
+}
+
+@mixin contact-item {
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+}
+
+// Media
+@mixin phone {
+    @media only screen and (max-width: 479px) { @content; }
+}
+@mixin phone-xl {
+    @media only screen and (max-width: 806px) { @content; }
+}
+@mixin tablet {
+    @media only screen and (max-width: 1050px) { @content; }
+}
+@mixin desktop {
+    @media only screen and (max-width: 1200px) { @content; }
+}
+@mixin desktop-xl {
+    @media only screen and (max-width: 1400px) { @content; }
 }

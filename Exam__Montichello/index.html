@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/dba69ef8c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
@@ -28,13 +28,15 @@
                     <div class="header__logo">
                         <img src="assets/images/Logo.png" alt="logo Montichello">
                     </div>
-                    <nav class="header__nav nav">
+                  
+                    <nav id="menu" class="header__nav nav ">
                         <a class="nav__link" href="#">about us</a>
                         <a class="nav__link" href="#">projects</a>
                         <a class="nav__link" href="#">news</a>
                         <a class="nav__link" href="#">contact</a>
                     </nav>
-                    <div class="header__social">
+                   
+                    <div class="header__social social">
                         <a class="social__item" href=""> <svg class="social__icon  " width="10" height="18">
                                 <use width="10" height="18" xlink:href="assets/images/sprite.svg#facebook"></use>
                             </svg></a>
@@ -43,40 +45,43 @@
                                     xlink:href="assets/images/sprite.svg#twitter"></use>
                             </svg></a>
                         <a class="social__item" href=""> <svg class="social__icon  " width="14" height="18">
-                                <use width="10" height="17" class="social__svg"
+                                <use width="14" height="18" class="social__svg"
                                     xlink:href="assets/images/sprite.svg#instagram"></use>
                             </svg></a>
                     </div>
+                    <div class="burger-menu" id="burger-menu">
+                        <span></span>
+                      </div>
+                    
                 </div>
             </header>
-            <div class="fist-screen__slider">
-                <div class="slider__block">
-                    <h1 class="fist-screen__h1">SIMPLE & MODERN</h1>
-                    <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-                </div>
-                <div class="slider__block">
-                    <h1 class="fist-screen__h1">SIMPLE & MODERN222</h1>
-                    <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-                </div>
-                <div class="slider__block">
-                    <h1 class="fist-screen__h1">SIMPLE & MODERN333</h1>
-                    <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-                </div>
-                <div class="slider__block">
-                    <h1 class="fist-screen__h1">SIMPLE & MODERN4444</h1>
-                    <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-                </div>
-                <div class="slider__block">
-                    <h1 class="fist-screen__h1">SIMPLE & MODERN5555</h1>
-                    <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-                </div>
+        </div>
+        <div class="fist-screen__slider">
+            <div class="slider__block">
+                <h1 class="fist-screen__h1">SIMPLE & MODERN</h1>
+                <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
             </div>
-            <div class="fist-screen__scroll">
-                <a class="fist-screen__arrow " href="#whatWeToDo"> <svg width="9" height="6">
-                        <use fill="white" xlink:href="assets/images/sprite.svg#arrow"></use>
-                    </svg></a>
+            <div class="slider__block">
+                <h1 class="fist-screen__h1">SIMPLE & MODERN222</h1>
+                <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
             </div>
-
+            <div class="slider__block">
+                <h1 class="fist-screen__h1">SIMPLE & MODERN333</h1>
+                <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="slider__block">
+                <h1 class="fist-screen__h1">SIMPLE & MODERN4444</h1>
+                <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="slider__block">
+                <h1 class="fist-screen__h1">SIMPLE & MODERN5555</h1>
+                <p class="fist-screen__subtext">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+        </div>
+        <div class="fist-screen__scroll">
+            <a class="fist-screen__arrow " href="#whatWeToDo"> <svg width="9" height="6">
+                    <use fill="white" xlink:href="assets/images/sprite.svg#arrow"></use>
+                </svg></a>
         </div>
     </section>
     <main class="main">
@@ -85,10 +90,10 @@
                 <h2 class="projects__h2">what we do</h2>
                 <div class="projects__wrapper">
                     <div class="projects__fist">
-                        <div class="projects__images">
-                            <img class="images__item" width="630" height="470" src="assets/images/projects__1.png"
-                                alt="image fist">
-                            <div class="images__block images__block--left"></div>
+                        <div class="projects__images projects__images--left">
+                            <img class="images__item " width="630" height="470"
+                                src="assets/images/projects__1.png" alt="image fist">
+                            <div class="images__block"></div>
                         </div>
                         <div class="projects__content">
                             <p class="projects__subtitle">one world</p>
@@ -119,8 +124,8 @@
                                 <p class="location__text">Hong Kong - 1588 feet</p>
                             </div>
                         </div>
-                        <div class="projects__images">
-                            <img class="images__item" src="assets/images/projects__2.png" alt="second projects">
+                        <div class="projects__images projects__images--right">
+                            <img class="images__item images__item--right" src="assets/images/projects__2.png" alt="second projects">
                             <div class="images__block images__block--right"></div>
                         </div>
                     </div>
@@ -232,24 +237,59 @@
                 </div>
             </div>
         </section>
-        <div  id="map"></div>
-        <!-- <div id="main__contacts contacts" class="main__map">
-<div width="1000" height="500" id="map" >
-
-</div>            <div class="contacts__form">
-                <h2 class="contacts__title"></h2>
-                <div class="contacts__wrapper">
-                    <div class="contacts__left"></div>
-                    <div class="contacts__right"></div>
+        <section class="main__contact contact">
+            <div class="contact__map" id="map">
+            </div>
+                <div class="contact__block">
+                    <h3 class="contact__h3">get in touch</h3>
+                         <div class="contact__wrapper">
+                            <ul class="contact__info">
+                                <li class="info__item info__item--mr"> <i class="info__icon fa-solid fa-location-dot"></i>91 Nolan Extensions Suite 670 </li>
+                                <li class="info__item"><i class=" info__icon fa-solid fa-phone"></i>+001 356-868-2454</li>
+                                <li class="info__item"><i class="info__icon fa-solid fa-inbox"></i>montichello@service.com</li>
+                                <li class="info__item"><i class="info__icon fa-regular fa-clock"></i>From 07:05AM to 19:30PM</li>
+                            </ul>
+                            <div class="contact__form-block">
+                                <form class="contact__form form " action="#">
+                                    <input class="form__input" value="Mollie Medina" required name="name" type="text" placeholder="Full Name">
+                                    <input class="form__input form__input-email" name="email" required type="email" placeholder="Email">
+                                    <button class="form__btn">submit</button>
+                                </form>
+                            </div>
+                         </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main__footer footer">
+        <div class="footer__container">
+            <div class="footer__box">
+          <div class="footer__content">
+            <img src="assets/images/Logo.png" alt="Montichello" class="top__logo">
+            <p class="footer__copyright">Copyrights © 2020 Montichello</p>
+          </div>
+                <div class="footer__social social">
+                    <a class="social__item" href=""> <svg class="social__icon  " width="10" height="18">
+                        <use width="10" height="18" xlink:href="assets/images/sprite.svg#facebook"></use>
+                    </svg></a>
+                <a class="social__item" href=""> <svg width="16" height="18">
+                        <use class="social__icon " width="16" height="18"
+                            xlink:href="assets/images/sprite.svg#twitter"></use>
+                    </svg></a>
+                <a class="social__item" href=""> <svg class="social__icon  " width="14" height="18">
+                        <use width="14" height="18" class="social__svg"
+                            xlink:href="assets/images/sprite.svg#instagram"></use>
+                    </svg></a>
                 </div>
             </div>
-        </div> -->
-    </main>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDZvJ8hzuwsd3kXyCx4QsvIT167RQoAec&callback=initMap&v=weekly"
+        defer></script>
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/script.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDZvJ8hzuwsd3kXyCx4QsvIT167RQoAec&callbac=initMap" async defer></script>
-    <script src="assets/js/map.js"></script> -->
 </body>
 
 

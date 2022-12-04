@@ -1,0 +1,28 @@
+.footer{
+    padding: 203px 0 234px 0;
+    background-image: url(../images/footer-bg.png), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &__container{
+        @include footer-container;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+    &__copyright{
+        font-family:$monserat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+    }
+}
