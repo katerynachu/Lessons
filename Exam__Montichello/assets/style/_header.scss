@@ -6,8 +6,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
+        @include phone-xs{
+            padding-top:0;
+        }
+    }
+&__social.social{
+  @include phone-xl{
+    display: none;
+  }
+}
     &__nav {
         display: flex;
         gap: 70px;
@@ -78,11 +86,13 @@
     }
 }
 
+
 .social {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
 
     &__item {
         width: 40px;

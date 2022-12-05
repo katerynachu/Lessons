@@ -26,14 +26,26 @@
         @include desktop{
             max-width: 1000px;
         }
-        @include tablet{
-            max-width: 680px;
-        }
+        @include phone{
+          max-width: 90%;
+             }
+             @include phone-xs() {
+                max-width: 95%;
+            }
+        
     }
 
     &__slider {
         padding-top: 223px;
         padding-bottom: 150px;
+        @include tablet {
+            padding-top: 150px;
+        padding-bottom: 150px;
+         }
+        @include phone{
+           padding-top: 110px;
+           padding-bottom: 100px;
+            }
         .slider{
             &__block{
                 position: relative;
@@ -52,6 +64,13 @@
         @include tablet{
             font-size: 42px;
         }
+        @include phone{
+           font-size: 32px;
+           }
+           @include phone-xs() {
+           font-size: 26px;
+           margin-bottom: 5px;
+        }
     }
 
     &__subtext {
@@ -63,6 +82,12 @@
         letter-spacing: 0.3em;
         color: $white;
         text-align: center;
+        @include phone{
+            font-size: 14px;
+            }
+            @include phone-xs() {
+                font-size: 12px;
+             }
     }
 &__scroll{
     display: flex;
@@ -81,9 +106,32 @@
         border-radius: 50%;
         border: 1px solid #FFFFFF;
         transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
+        
 
         @include phone {
             display: none;
+        }
+    }
+    &__arrow-svg{
+        animation: animate_fading 1.5s infinite;
+
+
+        @keyframes animate_fading {
+            0% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            75% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     }
 

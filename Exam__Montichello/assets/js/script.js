@@ -5,6 +5,7 @@ $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
+    // centerMode:true,
     responsive: [
         {
           breakpoint: 1400,
@@ -22,10 +23,10 @@ $('.slider').slick({
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 750,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+           
           }
         }
 
@@ -56,4 +57,23 @@ burgerMenu.addEventListener('click', function() {
   overlay.classList.toggle("overlay");
 });
 
+// BTN
+
+var animateButton = function(e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+  
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener('click', animateButton, false);
+}
 

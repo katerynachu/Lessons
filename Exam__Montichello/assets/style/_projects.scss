@@ -2,42 +2,17 @@
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
-
+    @include phone-xs() {
+       margin-top: 30px;
+       margin-bottom: 50px;
+     }
     &__container {
         @include container;
-
-        @media only screen and (max-width: 1400px) {
-            max-width: 1010px;
-        }
-
-        @media only screen and (max-width: 1050px) {
-            max-width: 830px;
-        }
-
-        @include tablet {
-            max-width: 520px;
-        }
-
-        @media only screen and (max-width: 670px) {
-            transform: translateX(0);
-        }
-
-        @media only screen and (max-width: 600px) {
-            max-width: 430px;
-        }
-
-        @include phone {
-            max-width: 410px;
-            padding: 0 20px;
-        }
-
-        @media only screen and (max-width: 420px) {
-            max-width: 360px;
-        }
-
-        @media only screen and (max-width: 380px) {
-            max-width: 320px;
-        }
+        @include phone-xs{
+           max-width: 75%;
+          
+           }
+      
     }
 
     &__h2 {
@@ -48,6 +23,9 @@
         @include desktop {
             margin-bottom: 40px;
         }
+        @include phone{
+            margin-bottom: 20px;
+              }
     }
 
     &__wrapper {
@@ -55,6 +33,9 @@
         display: flex;
         flex-direction: column;
         gap: 120px;
+        @include phone{
+            gap: 65px;
+              }
     }
 
     &__fist,
@@ -71,8 +52,10 @@
 
         @include tablet {
             flex-direction: column;
-            width: 100%;
         }
+        @include phone-xs() {
+           gap: 25px;
+            }
     }
 
     &__second {
@@ -86,22 +69,41 @@
     &__images {
         width: 100%;
         height: auto;
+  
 
 
-
-        &::after {
+        &::before {
             content: '';
             width: 585px;
             height: 470px;
             position: absolute;
+            @include tablet {
+                width: 450px;
+                height: 370px;
+            }
+            @include phone{
+                width: 100%;
+                      }
+                      @include phone-xs{
+                        width:300px;
+                        height: 250px;
+                       }
 
         }
 
         .images {
 
             &__item {
-
-                z-index: 1;
+                @include tablet {
+                    width: 490px;
+                    height: auto;
+                }
+                @include phone{
+                 width: 100%;
+                       }
+                       @include phone-xs{
+                        width: 90%;
+                       }
                 position: relative;
 
             }
@@ -110,7 +112,7 @@
     }
 
     &__images--left {
-        &::after {
+        &::before {
             top: 215px;
             left: 0;
             background-color: $blue;
@@ -119,14 +121,24 @@
                 top: 296px;
             }
             @include tablet {
-             top: 136px;
-             left: 90px;
+             top: 160px;
+             left: 116px;
             }
+            @include phone{
+                top: 163px;
+         left: 0%;   
+                      }
+                      @include phone-xs{
+                        top: 165px;
+                        left: 23%;   
+                       }
+          
+
         }
     }
 
     &__images--right {
-        &::after {
+        &::before {
             top: 870px;
             right: 0;
             background-color: $purple;
@@ -135,9 +147,17 @@
                 top: 965px;
             }
             @include tablet {
-                top: 1173px;
-                right: 90px;
+                top: 1121px;
+                right: 143px;
              }
+             @include phone{
+                top: 1128px;
+         right: 0%;   
+                      }
+                      @include phone-xs{
+                        top: 835px;
+
+                       }
         }
     }
 
@@ -152,6 +172,9 @@
 
     &__subtitle {
         @include subtitle;
+        @include phone-xs{
+           font-size: 18px;
+           }
     }
 
     &__title {
@@ -162,11 +185,18 @@
     &__description {
         @include description;
         margin-bottom: 40px;
+        @include phone-xs{
+            font-size: 16px;
+            margin-bottom: 20px;
+            }
     }
 
     &__button {
         @include btn;
         margin-bottom: 60px;
+        @include phone-xs{
+           margin-bottom: 30px;
+            }
     }
 
     &__location {
