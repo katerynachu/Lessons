@@ -1,4 +1,6 @@
-
+// addEventListener('DOMContentLoaded', (event) => {
+  
+// });
 let map;
 let position = { lat: 40.673030, lng: -73.932167 }
 function initMap() {

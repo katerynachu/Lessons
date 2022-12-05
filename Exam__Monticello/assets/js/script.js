@@ -1,5 +1,5 @@
-
-$('.slider').slick({
+addEventListener('DOMContentLoaded', (event) => {
+  $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -77,3 +77,5 @@ for (var i = 0; i < bubblyButtons.length; i++) {
   bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
+
+});
