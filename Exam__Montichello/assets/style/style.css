@@ -57,7 +57,7 @@
 .fist-screen {
   overflow: hidden;
   position: relative;
-  background: center/cover no-repeat url(../images/Mask\ Group.png), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background: center/cover no-repeat url(../images/Mask\ Group.webp), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
 }
 .fist-screen__container {
   margin: 0 auto;
@@ -737,7 +737,7 @@
 
 .latest-news {
   padding: 120px 0 130px 0;
-  background-image: url(../images/bg__latest.png);
+  background-image: url(../images/bg__latest.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -921,7 +921,7 @@
 }
 
 .slick-next:before {
-  content: url(../images/right.png);
+  content: url(../images/right.webp);
   padding: 10px 20px 15px 20px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -933,7 +933,7 @@
 }
 
 .slick-prev:before {
-  content: url(../images/left.png);
+  content: url(../images/left.webp);
   padding: 10px 20px 15px 20px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -1093,7 +1093,7 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
-  background: center/cover no-repeat url(../images/bi_zoom-in.png);
+  background: center/cover no-repeat url(../images/bi_zoom-in.webp);
   transition: opacity 0.6s ease;
 }
 .gallery__grid .grid__item:hover::after {
@@ -1160,7 +1160,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   padding: 60px 60px 68px;
-  background: bottom no-repeat url(../images/contact-bg.png);
+  background: bottom no-repeat url(../images/contact-bg.webp);
   background-color: #FFFFFF;
 }
 @media only screen and (max-width: 810px) {
@@ -1392,7 +1392,7 @@
 
 .footer {
   padding: 203px 0 234px 0;
-  background-image: url(../images/footer-bg.png), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  background-image: url(../images/footer-bg.webp), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-repeat: no-repeat;
   background-position: bottom;
 }

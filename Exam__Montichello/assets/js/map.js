@@ -171,7 +171,7 @@ function initMap() {
   let mapMarker = new google.maps.Marker({
     position,
     map,
-    icon: 'assets/images/Pin.png'
+    icon: 'assets/images/Pin.webp'
 });
   
 }
