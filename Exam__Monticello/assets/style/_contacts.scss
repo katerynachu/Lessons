@@ -12,7 +12,9 @@
         position:absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,0);
+        -webkit-transform: translate(-50%,0);
+            -ms-transform: translate(-50%,0);
+                transform: translate(-50%,0);
         padding: 60px 60px 68px;
         background: bottom no-repeat url(../images/contact-bg.webp);
         background-color: $white;
@@ -33,16 +35,25 @@
     
     }
     &__wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-top: 42px;
         width: 770px;
         @include tablet{
             width:610px;
         }
         @include phone-xl{
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 30px;
             margin-top: 20px;
         }
@@ -65,14 +76,25 @@
     }
     &__info{
         list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 25px;
         .info{
             &__item{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
-                justify-content: flex-start;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start;
                 gap: 8px;
                 @include contact-item;
             }
@@ -86,11 +108,18 @@
     }
     &__form{
         width: 310px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap:33px ;
         @include phone-xl{
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
          }
  
         .form{
@@ -106,11 +135,29 @@
                 font-family: $monserat;
                 font-size: 18px;
                 color: $black;
+                -webkit-transition: border-bottom .5s ease;
+                -o-transition: border-bottom .5s ease;
                 transition: border-bottom .5s ease;
                 @include phone-xl{
                     margin-left: 0;
                     padding: 1px 0 10px;
                  }
+            
+                &::-webkit-input-placeholder {
+                    color: rgba(75, 85, 98, 0.5);
+                }
+            
+                &::-moz-placeholder {
+                    color: rgba(75, 85, 98, 0.5);
+                }
+            
+                &:-ms-input-placeholder {
+                    color: rgba(75, 85, 98, 0.5);
+                }
+            
+                &::-ms-input-placeholder {
+                    color: rgba(75, 85, 98, 0.5);
+                }
             
                 &::placeholder {
                     color: rgba(75, 85, 98, 0.5);

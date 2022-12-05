@@ -3,7 +3,7 @@ addEventListener('DOMContentLoaded', (event) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     dots: true,
     // centerMode:true,
     responsive: [

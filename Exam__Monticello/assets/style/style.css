@@ -17,7 +17,6 @@
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
-
 @keyframes topBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -194,7 +193,7 @@
 }
 .fist-screen__arrow-svg {
   -webkit-animation: animate_fading 1.5s infinite;
-          animation: animate_fading 1.5s infinite;
+  animation: animate_fading 1.5s infinite;
 }
 @-webkit-keyframes animate_fading {
   0% {
@@ -717,6 +716,11 @@
   border: 1px solid transparent;
   color: #7E5AFF;
 }
+.projects__button:focus {
+  box-shadow: 0 2px 25px #7E5AFF;
+  border: 1px solid #7E5AFF;
+  color: #7E5AFF;
+}
 @media only screen and (max-width: 506px) {
   .projects__button {
     margin-bottom: 30px;
@@ -1140,6 +1144,11 @@
   border: 1px solid transparent;
   color: #7E5AFF;
 }
+.gallery__btn:focus {
+  box-shadow: 0 2px 25px #7E5AFF;
+  border: 1px solid #7E5AFF;
+  color: #7E5AFF;
+}
 
 .contact {
   position: relative;
@@ -1319,7 +1328,7 @@
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   background-color: #7E5AFF;
   color: #FFFFFF;
   border: none;
@@ -1377,16 +1386,21 @@
 .contact__form .form__btn.animate:before {
   display: block;
   -webkit-animation: topBubbles ease-in-out 0.75s forwards;
-          animation: topBubbles ease-in-out 0.75s forwards;
+  animation: topBubbles ease-in-out 0.75s forwards;
 }
 .contact__form .form__btn.animate:after {
   display: block;
   -webkit-animation: bottomBubbles ease-in-out 0.75s forwards;
-          animation: bottomBubbles ease-in-out 0.75s forwards;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
 }
 .contact__form .form__btn:hover {
   box-shadow: 0 2px 25px #7E5AFF;
   border: 1px solid transparent;
+  color: #7E5AFF;
+}
+.contact__form .form__btn:focus {
+  box-shadow: 0 2px 25px #7E5AFF;
+  border: 1px solid #7E5AFF;
   color: #7E5AFF;
 }
 

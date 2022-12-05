@@ -25,6 +25,8 @@
 		height: 2px;
 		opacity: 1;
 		position: absolute;
+		-webkit-transition: 0.3s ease-in-out;
+		-o-transition: 0.3s ease-in-out;
 		transition: 0.3s ease-in-out;
 	}
 
@@ -59,13 +61,17 @@
 		// TOP
 		span:before {
 			top: 0px;
-			transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			        transform: rotate(90deg);
 			width: 27px;
 		}
 
 		// MIDDLE
 		span {
-			transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
 			top: 13px;
 			width: 27px;
 		}
@@ -74,7 +80,9 @@
 		span:after {
 			top: 0px;
 			left: 0;
-			transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			        transform: rotate(90deg);
 			opacity: 0;
 			width: 0;
 		}

@@ -1,6 +1,7 @@
 .fist-screen {
     overflow: hidden;
     position: relative;
+    background:center / cover no-repeat url(../images/Mask\ Group.webp), -o-linear-gradient(206.57deg, #7E5AFF 16.9%, #55B7FF 83.27%);
     background:center / cover no-repeat url(../images/Mask\ Group.webp), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
 
 
@@ -90,8 +91,12 @@
              }
     }
 &__scroll{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 50px;
 }
     &__arrow {
@@ -100,11 +105,19 @@
         position: relative;
         width: 40px;
         height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         border-radius: 50%;
         border: 1px solid #FFFFFF;
+        -webkit-transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
+        -o-transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
         transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
         
 
@@ -113,7 +126,27 @@
         }
     }
     &__arrow-svg{
-        animation: animate_fading 1.5s infinite;
+        -webkit-animation: animate_fading 1.5s infinite;
+                animation: animate_fading 1.5s infinite;
+
+
+        @-webkit-keyframes animate_fading {
+            0% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            75% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
 
         @keyframes animate_fading {
@@ -156,8 +189,13 @@
         width: auto;
         top: 10%;
         right: 17px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         @include tablet{
         visibility: hidden;
           }

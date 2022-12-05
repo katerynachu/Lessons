@@ -1,5 +1,6 @@
 .footer{
     padding: 203px 0 234px 0;
+    background-image: url(../images/footer-bg.webp), -o-linear-gradient(198.94deg, #7E5AFF -2.19%, #55B7FF 103.21%);
     background-image: url(../images/footer-bg.webp), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -26,20 +27,36 @@
     
     }
     &__box{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
 
         @include phone{
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 20px;
              }
 
     }
     &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 41px;
         @include phone-xl{
            gap: 21px;

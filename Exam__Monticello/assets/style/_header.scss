@@ -3,9 +3,15 @@
 
     &__wrapper {
         padding-top: 53px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         @include phone-xs{
             padding-top:10px;
@@ -17,6 +23,8 @@
   }
 }
     &__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 70px;
 
@@ -33,15 +41,25 @@
             opacity: 0;
             text-align: center;
             padding-top: 20px;
+            -webkit-transition: opacity 0.7s linear;
+            -o-transition: opacity 0.7s linear;
             transition: opacity 0.7s linear;
 
             &.overlay {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 visibility: visible;
                 opacity: 1;
                 padding-top: 250px;
+                background: -o-linear-gradient(206.57deg, #7E5AFF 16.9%, #55B7FF 83.27%);
                 background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
             }
         }
@@ -50,9 +68,15 @@
         .nav {
             &__link {
                 cursor: pointer;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
 
-                align-items: center;
+                -webkit-box-align: center;
+
+                    -ms-flex-align: center;
+
+                        align-items: center;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-family: $sourceSans;
@@ -72,6 +96,8 @@
                     margin-right: 15px;
                     border-radius: 50%;
                     border: 1px solid #FFFFFF;
+                    -webkit-transition: background-color 0.5s ease;
+                    -o-transition: background-color 0.5s ease;
                     transition: background-color 0.5s ease;
                     @include tablet{
                         opacity: 0;
@@ -88,20 +114,34 @@
 
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
 
 
     &__item {
         width: 40px;
         height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         border-radius: 50%;
         border: 1px solid #FFFFFF;
+        -webkit-transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
+        -o-transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
         transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
 
         &:hover {

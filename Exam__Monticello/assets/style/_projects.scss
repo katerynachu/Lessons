@@ -30,8 +30,13 @@
 
     &__wrapper {
         // position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 120px;
         @include phone{
             gap: 65px;
@@ -41,17 +46,26 @@
     &__fist,
     &__second {
         margin-top: 90px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 70px;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
 
         @include desktop {
             gap: 50px;
         }
 
         @include tablet {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
         @include phone-xs() {
            gap: 25px;
@@ -61,7 +75,10 @@
     &__second {
         margin-top: 0;
         @include tablet {
-           flex-direction: column-reverse;
+           -webkit-box-orient: vertical;
+           -webkit-box-direction: reverse;
+               -ms-flex-direction: column-reverse;
+                   flex-direction: column-reverse;
         }
 
     }
@@ -200,6 +217,8 @@
     }
 
     &__location {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 10px;
 
