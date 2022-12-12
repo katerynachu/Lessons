@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 60px 135px 119px 135px;
+  border: 20px solid #2B81AC;
+  background-color: #3399cc;
+}
+.main__container {
+  max-width: 1166px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.weather__title-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.weather__wrap {
+  display: flex;
+  gap: 10px;
+}
+.weather__search-input {
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  height: 24px;
+  width: 200px;
+  color: #111010;
+  font-size: 20px;
+}
+.weather__search-input::-moz-placeholder {
+  color: #1f1a1b;
+  margin-bottom: 10px;
+}
+.weather__search-input:-ms-input-placeholder {
+  color: #1f1a1b;
+  margin-bottom: 10px;
+}
+.weather__search-input::placeholder {
+  color: #1f1a1b;
+  margin-bottom: 10px;
+}
+.weather__search-btn {
+  padding: 10px 15px;
+  background: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  color: #1f1a1b;
+  -webkit-animation: animate_grow 2s infinite;
+          animation: animate_grow 2s infinite;
+}
+.weather__search-btn::after {
+  -webkit-animation: none;
+          animation: none;
+}
+@-webkit-keyframes animate_grow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes animate_grow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.weather__block-param {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__main {
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 292px);
+}
+.weather__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  z-index: 2;
+  width: 68%;
+  padding: 50px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.weather__modal .modal__btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0.2;
+  transition: opacity ease 0.5s;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.weather__modal .modal__btn:hover {
+  opacity: 1;
+}
+.weather__modal .modal__btn::before, .weather__modal .modal__btn::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #000;
+}
+.weather__modal .modal__btn::before {
+  transform: rotate(45deg);
+}
+.weather__modal .modal__btn:after {
+  transform: rotate(-45deg);
+}
+.weather__item-London {
+  background-color: #2B81AC;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.weather__item-Shelomi {
+  background-color: #33CCCC;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.weather__item-Belgrade {
+  background-color: #996699;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.weather__item-Paris {
+  background-color: #C24747;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.weather__item-Cudgee {
+  background-color: #E2674A;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.weather__item-Venice {
+  background-color: #FFCC66;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.weather__item-Kyiv {
+  background-color: #99CC99;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.weather__item-Sydney {
+  background-color: #666699;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.weather__item-Cambridge {
+  background-color: #669999;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.weather__item-Tokyo {
+  background-color: #CC6699;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.weather__item-Francistown {
+  background-color: #339966;
+}
+.weather__block-param {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#item {
+  border: 3px solid white;
+  padding: 26px 0;
+}/*# sourceMappingURL=style.css.map */
