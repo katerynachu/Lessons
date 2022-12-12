@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById('form')
+    confirm('🍪Required by this site, you consent to the use of cookies, IP address and location data to help us make its preferences for you.🍪')
 
     if (form) {
         form.addEventListener('submit', (e) => {
