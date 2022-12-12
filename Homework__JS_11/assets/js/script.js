@@ -23,7 +23,13 @@ window.addEventListener('DOMContentLoaded', () => {
     container.append(main)
     function getCity(city) {
         let cityName = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=68651a1f53f5f02289bbd95c73d197b8`
-        fetch(cityName).then(function (resp) { return resp.json() }).then(function (data) {
+        fetch(cityName,{
+            method:"GET",
+            authority: '',
+            path:'/'
+
+        })
+        .then(function (resp) { return resp.json() }).then(function (data) {
             let mainWeather = document.querySelector('.weather__main')
             let item = document.createElement('div')
             item.setAttribute("id", "item")
@@ -69,7 +75,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     function findCity(city) {
         let cityName = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=68651a1f53f5f02289bbd95c73d197b8`
-        fetch(cityName).then(function (resp) { return resp.json() }).then(function (data) {
+        fetch(cityName,{
+            method:"GET",
+            authority: '',
+            path:'/'
+
+        }).then(function (resp) { return resp.json() }).then(function (data) {
             let mainWeather = document.querySelector('.weather__modal')
             let item = document.createElement('div')
             item.setAttribute("id", "modal")
