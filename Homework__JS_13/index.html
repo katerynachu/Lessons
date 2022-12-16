@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 12</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <div class="cabinet">
+        <h2>Welcome</h2>
+        <form id="signIn" action="#" method="get">
+            <select name="role" id="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+            <input class="input-login" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" type="text" name="login"
+                placeholder="Enter you login" required>
+            <input class="input-password" minlength="6" type="password" name="password" placeholder="Password" required>
+            <button class="form-btn" type="submit">Submit</button>
+        </form>
+        <form id="signUp" action="#" method="get">
+            <input class="input-loginUp" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" type="text" name="login"
+                placeholder="Enter you login" required>
+            <input class="input-passwordUp" minlength="6" type="password" name="password" placeholder="Password"
+                required>
+            <button class="form-btnUp" type="submit">Submit</button>
+        </form>
+        <div class="wrapper__btn"> <button id="in" type="button">Sign In</button>
+            <button id="up" type="button">Sign Up</button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

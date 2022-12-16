@@ -1,0 +1,125 @@
+.cabinet {
+    margin-top: 100px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form {
+    border: 1px solid grey;
+    padding: 50px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#signUp {
+    display: none;
+}
+
+#signIn {
+    display: flex;
+}
+
+#role {
+    max-width: 100px;
+}
+
+input {
+    padding: 10px 0 10px 5px
+}
+
+.wrapper__btn {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-btn,
+.form-btnUp {
+    width: 20%;
+    padding: 5px;
+    background: #1AAB8A;
+    color: #fff;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+
+}
+
+.form-btn:hover,
+.form-btnUp:hover {
+    color: #1AAB8A;
+    background-color: #fff;
+    border: 1px solid #1AAB8A;
+}
+
+#in,
+#up {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+#up:hover,
+#in:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+#up:before,
+#up:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+#in::before,
+#up::after,
+#in::after,
+#up::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+#up:after,
+#in::after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#in:hover:before,
+#up:hover::before,
+#up:hover:after,
+#in:hover::after {
+    width: 100%;
+    transition: 800ms ease all;
+}
