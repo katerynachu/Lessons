@@ -81,6 +81,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 let x = new User(login.value, selectRole.value)
                 console.log(x)
             }
+            login.value = '';
+            password.value = '';
 
         })
     }
@@ -96,7 +98,10 @@ window.addEventListener('DOMContentLoaded', () => {
             if (loginReg.value !== ' ' && loginReg.value !== '') {
                 let n = new User(loginReg.value, 'user')
                 allUsers.push(n);
+               alert('You have successfully registered')
                 console.log(allUsers)
+                loginReg.value = '';
+                passwordREg.value = '';
             } else {
                 alert('Enter correct login and pasword')
             }
