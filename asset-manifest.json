@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Lessons/homework__react/static/css/main.53fefe4c.css",
+    "main.js": "/Lessons/homework__react/static/js/main.abc93492.js",
+    "static/js/787.d38a42a7.chunk.js": "/Lessons/homework__react/static/js/787.d38a42a7.chunk.js",
+    "static/media/banner.jpeg": "/Lessons/homework__react/static/media/banner.d699f30ae4c5397e25ff.jpeg",
+    "static/media/article3.jpeg": "/Lessons/homework__react/static/media/article3.7356921174e0f36a24a3.jpeg",
+    "static/media/article4.jpeg": "/Lessons/homework__react/static/media/article4.a4fc9cd8ddf080bd0645.jpeg",
+    "static/media/article1.webp": "/Lessons/homework__react/static/media/article1.df67b206ca4e91bf11d2.webp",
+    "static/media/pikachu.png": "/Lessons/homework__react/static/media/pikachu.c6690b888f886da7ae2a.png",
+    "static/media/article2.webp": "/Lessons/homework__react/static/media/article2.ba39014e8e727576a4d7.webp",
+    "static/media/youtube.svg": "/Lessons/homework__react/static/media/youtube.4f0d10ec339185f2cc82cddd087cff33.svg",
+    "static/media/instagram.svg": "/Lessons/homework__react/static/media/instagram.613919491d2c93f397ce6b0020de5720.svg",
+    "index.html": "/Lessons/homework__react/index.html",
+    "static/media/facebook.svg": "/Lessons/homework__react/static/media/facebook.2dd5bdd216194f5edc8cf589f0378383.svg",
+    "main.53fefe4c.css.map": "/Lessons/homework__react/static/css/main.53fefe4c.css.map",
+    "main.abc93492.js.map": "/Lessons/homework__react/static/js/main.abc93492.js.map",
+    "787.d38a42a7.chunk.js.map": "/Lessons/homework__react/static/js/787.d38a42a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53fefe4c.css",
+    "static/js/main.abc93492.js"
+  ]
+}
