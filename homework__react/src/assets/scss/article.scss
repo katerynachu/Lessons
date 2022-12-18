@@ -1,0 +1,10 @@
+.article{
+    max-width: 600px;
+    display: flex;
+   align-items: center;
+   gap: 50px;
+
+&__image{
+    border-radius: 50%;
+}
+}
